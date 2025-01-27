@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA_Class/3. OSI Model.md",
+                "file": "CCNA_Class/1. Introduction to Networking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. OSI Model"
+              "title": "1. Introduction to Networking"
             }
           }
         ]
@@ -164,6 +164,8 @@
   },
   "active": "bc77dab78d849513",
   "lastOpenFiles": [
+    "CCNA_Class/3. OSI Model.md",
+    "Web Development/git-version-control.pdf",
     "CCNA_Class/5. Binary and Decimal Numbers.md",
     "CCNA_Class/6. Hexadecimal.md",
     "Cyber Security_Notes/5. Networking.md",
@@ -193,13 +195,11 @@
     "Linux-Admin-Notes/system_startup.md",
     "Linux-Admin-Notes/ssh_and_scp.md",
     "Linux-Admin-Notes/shells_and_bash_configuration.md",
-    "Linux-Admin-Notes/services.md",
     "Linux-Admin-Notes",
     "Web Development/0. Frontend_Notes",
     "Cyber Security_Notes/unordered/Cybersecurity Course Outline.pdf",
     "Cyber Security_Notes/0. INCEPTOR CYBERSECURITY COURSE OUTLINE.pdf",
     "Web Development/javascript_tutorial.pdf",
-    "Web Development/javascript_tutorial.pdf.crdownload",
     "Images/Pasted image 20250109094019.png",
     "Images/Pasted image 20250109092627.png",
     "Images/Pasted image 20250109091029.png",
