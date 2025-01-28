@@ -1,45 +1,81 @@
 # Dynamically determine the script's directory
 $repoPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 
-# Change to the repository directory
-Set-Location -Path $repoPath
-
-# Step 1: Check if the current repository matches the remote
-Write-Host "Checking remote repository..." -ForegroundColor Cyan
-$remoteUrl = git remote get-url origin
-if ($remoteUrl -ne "git@github.com:brianondemand/inceptor_notes.git") {
-    Write-Host "The current repository does not match the expected remote." -ForegroundColor Red
-    Exit
+# Function to display a progress bar
+function Show-Progress {
+    param (
+        [string]$Message,
+        [int]$Duration = 3
+    )
+    Write-Host $Message -ForegroundColor Cyan
+    for ($i = 1; $i -le $Duration; $i++) {
+        Write-Host -NoNewline "."
+        Start-Sleep -Milliseconds 500
+    }
+    Write-Host ""
 }
 
+# Function for bold-like text
+function Write-Bold {
+    param (
+        [string]$Text,
+        [string]$Color = "White"
+    )
+    Write-Host ("[$((($Text).ToUpper()))]") -ForegroundColor $Color
+}
+
+# Start script execution
+Write-Host "Starting Git Sync Script..." -ForegroundColor Yellow
+
+# Change to the repository directory
+Write-Bold "Changing to repository directory" "Green"
+Set-Location -Path $repoPath
+Show-Progress -Message "Locating repository..."
+
+# Step 1: Check if the current repository matches the remote
+Write-Bold "Checking remote repository" "Green"
+$remoteUrl = git remote get-url origin
+if ($remoteUrl -ne "git@github.com:brianondemand/inceptor_notes.git") {
+    Write-Host "ERROR: The current repository does not match the expected remote." -ForegroundColor Red
+    Read-Host "Press Enter to exit..."
+    Exit
+}
+Write-Host "Remote repository matches!" -ForegroundColor Green
+
 # Step 2: Fetch updates and check if the repo is behind
-Write-Host "Fetching updates from remote repository..." -ForegroundColor Cyan
+Write-Bold "Fetching updates from remote repository" "Green"
+Show-Progress -Message "Fetching updates..."
 git fetch
 
 # Check if the local branch is behind
 $branchStatus = git status | Select-String "Your branch is behind" | Measure-Object
 if ($branchStatus.Count -gt 0) {
-    Write-Host "The local repository is behind. Pulling updates..." -ForegroundColor Yellow
+    Write-Bold "The local repository is behind. Pulling updates..." "Yellow"
     git pull
 } else {
     Write-Host "The local repository is up-to-date." -ForegroundColor Green
 }
 
 # Step 3: Check for local changes
-Write-Host "Checking for local changes..." -ForegroundColor Cyan
+Write-Bold "Checking for local changes" "Green"
 git status
 
 # Step 4: Add all modified files
-Write-Host "Adding all changes to staging area..." -ForegroundColor Cyan
+Write-Bold "Adding all changes to staging area" "Green"
 git add .
 
 # Step 5: Commit changes
 $commitMessage = "Updates"
-Write-Host "Committing changes with message: '$commitMessage'..." -ForegroundColor Cyan
+Write-Bold "Committing changes" "Green"
 git commit -m $commitMessage
 
 # Step 6: Push changes to the remote repository
-Write-Host "Pushing changes to remote repository..." -ForegroundColor Cyan
+Write-Bold "Pushing changes to remote repository" "Green"
+Show-Progress -Message "Pushing changes..."
 git push
 
-Write-Host "Script completed successfully!" -ForegroundColor Green
+Write-Bold "Script completed successfully!" "Green"
+
+# Keep PowerShell open
+Write-Host "Press Enter to close the terminal." -ForegroundColor Yellow
+Read-Host
