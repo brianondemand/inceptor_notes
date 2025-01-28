@@ -29,27 +29,15 @@ function Write-Bold {
     Write-Host ("[$((($Text).ToUpper()))]") -ForegroundColor $Color
 }
 
-# Function to display a large header
+# Function to display a simple header
 function Display-Header {
-    param (
-        [string]$Title
-    )
-    $header = @"
-██████╗ ██╗██╗  ██╗████████╗██╗  ██╗     ██████╗ ██╗██╗      ██████╗ ████████╗
-██╔══██╗██║╚██╗██╔╝╚══██╔══╝██║  ██║    ██╔════╝ ██║██║     ██╔═══██╗╚══██╔══╝
-██████╔╝██║ ╚███╔╝    ██║   ███████║    ██║  ███╗██║██║     ██║   ██║   ██║   
-██╔═══╝ ██║ ██╔██╗    ██║   ██╔══██║    ██║   ██║██║██║     ██║   ██║   ██║   
-██║     ██║██╔╝ ██╗   ██║   ██║  ██║    ╚██████╔╝██║███████╗╚██████╔╝   ██║   
-╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝     ╚═════╝ ╚═╝╚══════╝ ╚═════╝    ╚═╝   
-"@
-    Write-Host $header -ForegroundColor Yellow
     Write-Host ("-" * 80) -ForegroundColor DarkGray
-    Write-Host "$Title" -ForegroundColor Green
+    Write-Host " GITHUB PILOT - Your Sync Assistant " -ForegroundColor Green
     Write-Host ("-" * 80) -ForegroundColor DarkGray
 }
 
 # Start script execution
-Display-Header "Welcome to GITHUB PILOT - Your Sync Assistant"
+Display-Header
 
 # Change to the repository directory
 Write-Bold "Changing to repository directory" "Green"
@@ -90,7 +78,7 @@ Show-Progress -Message "Staging files..."
 git add .
 
 # Step 5: Commit changes
-$commitMessage = "Updates"
+$commitMessage = "Updates Via Github Pilot"
 Write-Bold "Committing changes" "Green"
 Show-Progress -Message "Committing files..."
 git commit -m $commitMessage
