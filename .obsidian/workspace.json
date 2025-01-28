@@ -11,10 +11,14 @@
             "id": "1ee5571cdc1bc79c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Cyber Security_Notes/8. Cryptography.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "8. Cryptography"
             }
           }
         ]
@@ -73,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 226.5
+    "width": 226.5,
+    "collapsed": true
   },
   "right": {
     "id": "c86732ba76e9b6a5",
@@ -158,7 +163,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "241d89c8fcd4a5ff",
+  "active": "1ee5571cdc1bc79c",
   "lastOpenFiles": [
     "Web Development/2. CSS/5. CSS Styling 2.md",
     "7 IP Addressing.md",
