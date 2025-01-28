@@ -1,16 +1,21 @@
 # Dynamically determine the script's directory
 $repoPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 
-# Function to display a progress bar
+# Function for a percentage-based progress bar
 function Show-Progress {
     param (
         [string]$Message,
-        [int]$Duration = 3
+        [int]$Duration = 10
     )
     Write-Host $Message -ForegroundColor Cyan
     for ($i = 1; $i -le $Duration; $i++) {
-        Write-Host -NoNewline "."
-        Start-Sleep -Milliseconds 500
+        $percent = [math]::Floor(($i / $Duration) * 100)
+        Write-Host -NoNewline "[$("{0,-3}" -f $percent)%] ["
+        Write-Host -NoNewline ("#" * $i) -ForegroundColor Green
+        Write-Host -NoNewline ("-" * ($Duration - $i))
+        Write-Host -NoNewline "]"
+        Start-Sleep -Milliseconds 300
+        Write-Host "`r" -NoNewline
     }
     Write-Host ""
 }
@@ -81,11 +86,13 @@ git status
 
 # Step 4: Add all modified files
 Write-Bold "Adding all changes to staging area" "Green"
+Show-Progress -Message "Staging files..."
 git add .
 
 # Step 5: Commit changes
-$commitMessage = "Updates Via Github Pilot"
+$commitMessage = "Updates"
 Write-Bold "Committing changes" "Green"
+Show-Progress -Message "Committing files..."
 git commit -m $commitMessage
 
 # Step 6: Push changes to the remote repository
