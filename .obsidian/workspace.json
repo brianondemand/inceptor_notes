@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "311f6da42b2d921a",
+        "id": "e9e009c1f6daea99",
         "type": "tabs",
         "children": [
           {
-            "id": "4c2c5640dac64520",
+            "id": "1ee5571cdc1bc79c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Trainer_Guide/Student Class Timetable.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Student Class Timetable"
+              "title": "New tab"
             }
           }
         ]
@@ -162,8 +158,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4c2c5640dac64520",
+  "active": "241d89c8fcd4a5ff",
   "lastOpenFiles": [
+    "Web Development/2. CSS/5. CSS Styling 2.md",
+    "7 IP Addressing.md",
+    "Trainer_Guide/Student Class Timetable.md",
     "Vick/Practicals for Network Security.md",
     "Vick/Network Security Fundamentals.md",
     "CCNA_Class/1. Introduction to Networking.md",
@@ -173,7 +172,6 @@
     "CCNA_Class/6. Hexadecimal.md",
     "Cyber Security_Notes/5. Networking.md",
     "CCNA_Class/4. TCP-IP Model.md",
-    "Trainer_Guide/Student Class Timetable.md",
     "Untitled.md",
     "Cyber Security_Notes/6. Network Devices.md",
     "Cyber Security_Notes/7. Network Security Attacks & Fundamentals.md",
@@ -193,8 +191,6 @@
     "Web Development/sample_code",
     "Linux-Admin-Notes/virtual_machines.md",
     "Linux-Admin-Notes/utilities.md",
-    "Linux-Admin-Notes/task_state_analysis.md",
-    "Linux-Admin-Notes/tar_and_gzip.md",
     "Linux-Admin-Notes",
     "Web Development/0. Frontend_Notes",
     "Cyber Security_Notes/unordered/Cybersecurity Course Outline.pdf",
