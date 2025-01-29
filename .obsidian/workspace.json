@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8138b9d3340f6129",
+        "id": "5dfc412c588ec055",
         "type": "tabs",
         "children": [
           {
-            "id": "ed1e33ad7cde8bfa",
+            "id": "25755ee7987d6e42",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cyber Security_Notes/10. Information Gathering.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "10. Information Gathering"
+              "title": "New tab"
             }
           }
         ]
@@ -93,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cyber Security_Notes/2. Threats and Vulnerabilities.md",
+                "file": "Linux-Admin-Notes/42. hardware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2. Threats and Vulnerabilities"
+              "title": "Backlinks for 42. hardware"
             }
           },
           {
@@ -162,37 +158,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed1e33ad7cde8bfa",
+  "active": "241d89c8fcd4a5ff",
   "lastOpenFiles": [
-    "Cyber Security_Notes/9. Introduction To Pentesting.md",
-    "Cyber Security_Notes/4. Security Policy.md",
-    "Trainer_Guide/Student Class Timetable.md",
-    "README.md",
-    "Cyber Security_Notes/updates/Vulnerability and Risk Assessment.md",
-    "Untitled.md",
-    "0. Practical.md",
-    "Cyber Security_Notes/updates/Cybersecurity Course Outline.pdf",
-    "Cyber Security_Notes/8. Cryptography.md",
-    "Cyber Security_Notes/10. Information Gathering.md",
-    "Cyber Security_Notes/3. Cyber Security Threats.md",
-    "Linux-Admin-Notes/10. tar_and_gzip.md",
-    "Linux-Admin-Notes/9. enviroment_variable.md",
-    "Linux-Admin-Notes/6. permissions.md",
     "Linux-Admin-Notes/README.md",
-    "Linux-Admin-Notes/8. finding_files.md",
-    "Linux-Admin-Notes/7. pipe_and_redirect.md",
-    "Linux-Admin-Notes/5. file_system.md",
-    "Linux-Admin-Notes/4. shells_and_bash_configuration.md",
-    "Linux-Admin-Notes/3. files_and_dirs.md",
-    "Linux-Admin-Notes/2. commands.md",
-    "Linux-Admin-Notes/1. introduction.md",
+    "Linux-Admin-Notes/42. hardware.md",
+    "Linux-Admin-Notes/41. disk_io_analysis.md",
+    "Linux-Admin-Notes/40. task_state_analysis.md",
+    "Linux-Admin-Notes/39. running_executables.md",
+    "Linux-Admin-Notes/38. utilities.md",
+    "Linux-Admin-Notes/37. dwm.md",
+    "Linux-Admin-Notes/36. selinux.md",
+    "Linux-Admin-Notes/35. ldap.md",
+    "Linux-Admin-Notes/34. network file system.md",
+    "Linux-Admin-Notes/33. logical_volume_management.md",
+    "Linux-Admin-Notes/32. partitions.md",
+    "Linux-Admin-Notes/31. virtual_machines.md",
+    "Linux-Admin-Notes/30. enviroment_modules.md",
+    "Linux-Admin-Notes/29. kernel.md",
+    "Linux-Admin-Notes/28. encryption.md",
+    "Linux-Admin-Notes/27. sed_and_awk.md",
+    "Linux-Admin-Notes/26. grep.md",
+    "Linux-Admin-Notes/25. log_files_and_journals.md",
+    "Linux-Admin-Notes/24. performance_monitoring.md",
+    "Linux-Admin-Notes/23. package_managers.md",
+    "Linux-Admin-Notes/22. firewall.md",
+    "Linux-Admin-Notes/21. ports.md",
+    "Linux-Admin-Notes/20. networking.md",
+    "Linux-Admin-Notes/19. ssh_and_scp.md",
+    "Linux-Admin-Notes/18. services.md",
+    "Cyber Security_Notes/updates/Cybersecurity Course Outline.pdf",
     "Trainer_Guide/Web 6 months.docx",
     "Trainer_Guide/Web 3 months.docx",
-    "Cyber Security_Notes/Linux-Notes/virtual_machines.md",
-    "Cyber Security_Notes/Linux-Notes/utilities.md",
-    "Cyber Security_Notes/Linux-Notes/task_state_analysis.md",
-    "Cyber Security_Notes/Linux-Notes/tar_and_gzip.md",
-    "Cyber Security_Notes/Linux-Notes/system_startup.md",
     "Cyber Security_Notes/Linux-Notes",
     "Unconfirmed 170720.crdownload",
     "Web Development/git-version-control.pdf",
