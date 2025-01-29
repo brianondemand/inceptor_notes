@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "877df51860557a8d",
+        "id": "8138b9d3340f6129",
         "type": "tabs",
         "children": [
           {
-            "id": "581a6cfb9ebf7d74",
+            "id": "ed1e33ad7cde8bfa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Cyber Security_Notes/10. Information Gathering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "10. Information Gathering"
             }
           }
         ]
@@ -162,16 +162,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "581a6cfb9ebf7d74",
+  "active": "ed1e33ad7cde8bfa",
   "lastOpenFiles": [
+    "Cyber Security_Notes/9. Introduction To Pentesting.md",
+    "Cyber Security_Notes/4. Security Policy.md",
+    "Trainer_Guide/Student Class Timetable.md",
+    "README.md",
     "Cyber Security_Notes/updates/Vulnerability and Risk Assessment.md",
     "Untitled.md",
     "0. Practical.md",
     "Cyber Security_Notes/updates/Cybersecurity Course Outline.pdf",
     "Cyber Security_Notes/8. Cryptography.md",
-    "Trainer_Guide/Student Class Timetable.md",
     "Cyber Security_Notes/10. Information Gathering.md",
-    "Cyber Security_Notes/4. Security Policy.md",
     "Cyber Security_Notes/3. Cyber Security Threats.md",
     "Linux-Admin-Notes/10. tar_and_gzip.md",
     "Linux-Admin-Notes/9. enviroment_variable.md",
@@ -191,8 +193,6 @@
     "Cyber Security_Notes/Linux-Notes/task_state_analysis.md",
     "Cyber Security_Notes/Linux-Notes/tar_and_gzip.md",
     "Cyber Security_Notes/Linux-Notes/system_startup.md",
-    "Cyber Security_Notes/Linux-Notes/ssh_and_scp.md",
-    "Cyber Security_Notes/Linux-Notes/services.md",
     "Cyber Security_Notes/Linux-Notes",
     "Unconfirmed 170720.crdownload",
     "Web Development/git-version-control.pdf",
