@@ -11,10 +11,14 @@
             "id": "25755ee7987d6e42",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Trainer_Guide/Student Class Timetable.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Student Class Timetable"
             }
           }
         ]
@@ -158,7 +162,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "241d89c8fcd4a5ff",
+  "active": "25755ee7987d6e42",
   "lastOpenFiles": [
     "Linux-Admin-Notes/README.md",
     "Linux-Admin-Notes/42. hardware.md",
