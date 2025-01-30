@@ -52,7 +52,7 @@ if ($remoteUrl -ne "git@github.com:brianondemand/inceptor_notes.git") {
     Read-Host "Press Enter to exit..."
     Exit
 }
-Write-Host "Remote repository matches!" -ForegroundColor Green
+Write-Host "Github repository matches!" -ForegroundColor Green
 
 # Step 2: Fetch updates and check if the repo is autodated
 Write-Bold "Fetching updates from remote repository" "Green"
