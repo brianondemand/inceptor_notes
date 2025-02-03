@@ -4,21 +4,37 @@
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "8d3c419187e82e28",
         "type": "tabs",
         "children": [
           {
             "id": "38703ac989409627",
+=======
+        "id": "554f16e7ffdd07d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c74b2075ee1d477",
+>>>>>>> 99050b3c229f1c2a4931df66584c248070104326
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "CCNA_Class/7. IP Addressing.md",
+=======
+                "file": "CCNA_Class/Cisco IOS Software.md",
+>>>>>>> 99050b3c229f1c2a4931df66584c248070104326
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "7. IP Addressing"
+=======
+              "title": "Cisco IOS Software"
+>>>>>>> 99050b3c229f1c2a4931df66584c248070104326
             }
           }
         ]
@@ -77,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 226.5
+    "width": 226.5,
+    "collapsed": true
   },
   "right": {
     "id": "c86732ba76e9b6a5",
@@ -162,6 +179,7 @@
       "command-palette:Open command palette": false
     }
   },
+<<<<<<< HEAD
   "active": "38703ac989409627",
   "lastOpenFiles": [
     "Trainer_Guide/Student Class Timetable.md",
@@ -183,6 +201,25 @@
     "Web Development/2. CSS/4. CSS Styling.md",
     "Web Development/introduction-to-CSS.pdf",
     "Web Development/introduction-to-CSS.pdf.crdownload",
+=======
+  "active": "3c74b2075ee1d477",
+  "lastOpenFiles": [
+    "CCNA_Class/7. IP Addressing.md",
+    "CCNA_Class/Cisco IOS Software.md",
+    "CCNA_Class/8. Subnetting.md",
+    "Trainer_Guide/Student Class Timetable.md",
+    "CCNA_Class/Untitled.md",
+    "Web Development/4. Javascript/6. Functions.md",
+    "Web Development/4. Javascript/1. Introduction.md",
+    "Web Development/4. Javascript/5. Statements.md",
+    "Web Development/4. Javascript/4. Operators.md",
+    "Web Development/4. Javascript/3. Data Types.md",
+    "Web Development/4. Javascript/2. Variables.md",
+    "Statements in JavaScript.md",
+    "Web Development/4. Javascript/JS Notes.pdf",
+    "Web Development/3. Bootstrap 5/1. Introduction.md",
+    "Web Development/3. Bootstrap 5",
+>>>>>>> 99050b3c229f1c2a4931df66584c248070104326
     "Linux-Admin-Notes/README.md",
     "Linux-Admin-Notes/42. hardware.md",
     "Linux-Admin-Notes/41. disk_io_analysis.md",
@@ -199,6 +236,14 @@
     "Cyber Security_Notes/updates/Cybersecurity Course Outline.pdf",
     "Trainer_Guide/Web 6 months.docx",
     "Trainer_Guide/Web 3 months.docx",
+<<<<<<< HEAD
+=======
+    "Cyber Security_Notes/Linux-Notes",
+    "Unconfirmed 170720.crdownload",
+    "Web Development/git-version-control.pdf",
+    "Web Development/sample_code/css/style.css",
+    "Web Development/sample_code/index.html",
+>>>>>>> 99050b3c229f1c2a4931df66584c248070104326
     "Images/Pasted image 20250109094019.png",
     "Images/Pasted image 20250109092627.png",
     "Images/Pasted image 20250109091029.png",
