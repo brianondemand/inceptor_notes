@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5dfc412c588ec055",
+        "id": "8d3c419187e82e28",
         "type": "tabs",
         "children": [
           {
-            "id": "25755ee7987d6e42",
+            "id": "38703ac989409627",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trainer_Guide/Student Class Timetable.md",
+                "file": "CCNA_Class/7. IP Addressing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Student Class Timetable"
+              "title": "7. IP Addressing"
             }
           }
         ]
@@ -162,8 +162,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "25755ee7987d6e42",
+  "active": "38703ac989409627",
   "lastOpenFiles": [
+    "Trainer_Guide/Student Class Timetable.md",
+    "bookmarks_inceptor.html",
+    "Web Development/GIT/1. Introduction to Git.md",
+    "Web Development/GIT/2. GitHub.md",
+    "CCNA_Class/6. Hexadecimal.md",
+    "CCNA_Class/7. IP Addressing.md",
+    "CCNA_Class/5. Binary and Decimal Numbers.md",
+    "Cyber Security_Notes/5. Networking.md",
+    "CCNA_Class/1. Introduction to Networking.md",
+    "CCNA_Class/8. Subnetting.md",
+    "Cybersecurity Course Outline.pdf",
+    "Web Development/GIT",
+    "Cyber Security_Notes/8. Cryptography.md",
+    "Web Development/2. CSS/5. CSS Styling 2.md",
+    "Web Development/Chapter4-CSS.pdf",
+    "Web Development/Chapter4-CSS.pdf.crdownload",
+    "Web Development/2. CSS/4. CSS Styling.md",
+    "Web Development/introduction-to-CSS.pdf",
+    "Web Development/introduction-to-CSS.pdf.crdownload",
     "Linux-Admin-Notes/README.md",
     "Linux-Admin-Notes/42. hardware.md",
     "Linux-Admin-Notes/41. disk_io_analysis.md",
@@ -177,29 +196,9 @@
     "Linux-Admin-Notes/33. logical_volume_management.md",
     "Linux-Admin-Notes/32. partitions.md",
     "Linux-Admin-Notes/31. virtual_machines.md",
-    "Linux-Admin-Notes/30. enviroment_modules.md",
-    "Linux-Admin-Notes/29. kernel.md",
-    "Linux-Admin-Notes/28. encryption.md",
-    "Linux-Admin-Notes/27. sed_and_awk.md",
-    "Linux-Admin-Notes/26. grep.md",
-    "Linux-Admin-Notes/25. log_files_and_journals.md",
-    "Linux-Admin-Notes/24. performance_monitoring.md",
-    "Linux-Admin-Notes/23. package_managers.md",
-    "Linux-Admin-Notes/22. firewall.md",
-    "Linux-Admin-Notes/21. ports.md",
-    "Linux-Admin-Notes/20. networking.md",
-    "Linux-Admin-Notes/19. ssh_and_scp.md",
-    "Linux-Admin-Notes/18. services.md",
     "Cyber Security_Notes/updates/Cybersecurity Course Outline.pdf",
     "Trainer_Guide/Web 6 months.docx",
     "Trainer_Guide/Web 3 months.docx",
-    "Cyber Security_Notes/Linux-Notes",
-    "Unconfirmed 170720.crdownload",
-    "Web Development/git-version-control.pdf",
-    "Web Development/sample_code/css/style.css",
-    "Web Development/sample_code/index.html",
-    "Web Development/sample_code/css",
-    "Web Development/sample_code",
     "Images/Pasted image 20250109094019.png",
     "Images/Pasted image 20250109092627.png",
     "Images/Pasted image 20250109091029.png",
