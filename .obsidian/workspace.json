@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "feae44270665d36e",
+        "id": "b887c3ef116e1ea8",
         "type": "tabs",
         "children": [
           {
-            "id": "f7eab2885c27b938",
+            "id": "57cf7d72b3a8f1fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA_Class/8. Subnetting.md",
+                "file": "Trainer_Guide/Student Class Timetable.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8. Subnetting"
+              "title": "Student Class Timetable"
             }
           }
         ]
@@ -168,10 +168,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f7eab2885c27b938",
+  "active": "57cf7d72b3a8f1fb",
   "lastOpenFiles": [
+    "CCNA_Class/9. Cisco IOS Software.md",
+    "CCNA_Class/8. Subnetting.md",
+    "Cyber Security_Notes/more/Security & Privacy in Linux OS.md",
+    "Cyber Security_Notes/more/Partitioning Schemes in Storage Drives.md",
+    "Cyber Security_Notes/more/Components of Operating System.md",
+    "Cyber Security_Notes/more/Important Windows Folders & Linux Directories.md",
     "Cyber Security_Notes/5. Operating System Security.md",
-    "Security & Privacy in Linux OS.md",
+    "Cyber Security_Notes/more/OS File Systems.md",
+    "Cyber Security_Notes/11. Information Gathering.md",
+    "Cyber Security_Notes/9. Cryptography.md",
+    "Trainer_Guide/Student Class Timetable.md",
+    "Cyber Security_Notes/more/Veracrypt Practical.md",
+    "Trainer_Guide/Cybersecurity Course Outline.md",
     "Cybersecurity Course Outline.pdf",
     "Cyber Security_Notes/ongoing/Hacking Operating System.md",
     "Links.md",
@@ -182,29 +193,18 @@
     "Cyber Security_Notes/more/The Windows Registry.md",
     "Cyber Security_Notes/more/Cyber Laws.md",
     "Cyber Security_Notes/more/Networking Commands For Windows and Linux.md",
-    "Cyber Security_Notes/more/Components of Operating System.md",
     "Cyber Security_Notes/more/0. Prac.pdf",
     "Cyber Security_Notes/more",
     "Cyber Security_Notes/ongoing",
     "Cyber Security_Notes/New folder",
     "Cyber Security_Notes/updates/Components of Operating System.md",
-    "Trainer_Guide/Student Class Timetable.md",
     "Unconfirmed 991330.crdownload",
     "Cyber Security_Notes/7. Network Devices.md",
     "Cyber Security_Notes/6. Networking.md",
     "Cyber Security_Notes/8. Network Security Attacks & Fundamentals.md",
-    "Cyber Security_Notes/9. Cryptography.md",
     "Cyber Security_Notes/10. Introduction To Pentesting.md",
-    "Cyber Security_Notes/11. Information Gathering.md",
-    "Cyber Security_Notes/updates/Networking Commands For Windows and Linux.md",
-    "Data protection and cybersecurity laws in Kenya  CMS Expert Guide.md",
-    "Cyber Security_Notes/updates/Cyber Laws.md",
     "Unconfirmed 36665.crdownload",
     "Cyber Security_Notes/updates/0. Prac.pdf",
-    "Trainer_Guide/Cybersecurity Course Outline.md",
-    "CCNA_Class/2. Network Devices.md",
-    "CCNA_Class/1. Introduction to Networking.md",
-    "CCNA_Class/4. TCP-IP Model.md",
     "Cyber Security_Notes/updates/Unconfirmed 405120.crdownload"
   ]
 }
