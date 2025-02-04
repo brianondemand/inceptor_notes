@@ -1,125 +1,105 @@
+## Cybersecurity Course Units / Modules:
 
-## **1. Introduction**
-
-- **Introduction to Cybersecurity**
-    - Definition and importance of cybersecurity
-    - Evolution of cybersecurity practices
-    - Overview of key cybersecurity domains
-
-## **2. Cyber Threats and Vulnerabilities**
-
-- **Types of Threats**
-    - Malware, phishing, and ransomware
-    - Insider threats and social engineering
-- **System Vulnerabilities**
-    - Common vulnerabilities in hardware and software
-    - Patch management and vulnerability life cycle
-
-## **3. Information Security**
-
-- **Intellectual Property**
-    - Definition and types of intellectual property
-    - Protecting intellectual property in cyberspace
-- **CAI (Confidentiality, Availability, Integrity)**
-    - Key principles of information security
-    - Real-world examples of CAI implementation
-- **Aspects of Security**
-    - Physical security
-    - Personnel security
-    - Information and operational security
-## **4. Security Policy**
-
-- **Types & Importance of Security Policy**
-    - Organizational policies and compliance standards
-    - Writing effective security policies
-- **Bulls Eye Model**
-    - Layers of protection in the Bulls Eye framework
-- **User Account Controls**
-    - Importance of account management and access controls
-- **Local Rights and Privileges**
-    - Managing user permissions on systems
-
-## **5. Networking**
-
-- **Network Fundamentals**
-    - Basic concepts: IP, MAC, and subnets
-    - Devices: routers, switches, and firewalls
-- **Network Topologies**
-    - Types of topologies: star, mesh, bus, etc.
-    - Use cases and pros/cons
-- **Network Analysis**
-    - Tools and techniques for monitoring traffic
-    - Packet analysis basics
-- **Network Attacks**
-    - Types of attacks: DoS, MITM, etc.
-    - Case studies of major network breaches
-- **Secure Network Design**
-    - Best practices for designing secure networks
-    - Network segmentation and zoning
-- **Network Protocols**
-    - Common protocols: TCP/IP, DNS, HTTP, etc.
-    - Protocol vulnerabilities and mitigation
-
-## **6. OS Security**
-
-- **Windows OS**
-    - Hardening techniques
-    - Built-in security tools
-- **Linux OS**
-    - Security configurations
-    - Key tools and utilities
-
-## **7. Cryptography**
-
-- **Digital Certificates**
-    - Role in authentication and encryption
-    - Certificate authorities and PKI
-- **Digital Signatures**
-    - Ensuring data authenticity and integrity
-- **Steganography**
-    - Hiding information in digital media
-- **Network Security (IDS, IPS)**
-    - Intrusion Detection Systems (IDS)
-    - Intrusion Prevention Systems (IPS)
-
-## **8. Penetration Testing (Hands-On)**
-
-- **Types of Pentests**
-    - Black box, white box, and gray box
-- **Pentest Phases**
-    - Planning, scanning, exploitation, and reporting
-- **Footprinting**
-    - Information gathering techniques
-- **Enumeration**
-    - Identifying network resources
-- **Fingerprinting**
-    - Recognizing OS and service details
-- **Network Sniffing**
-    - Capturing and analyzing network traffic
-- **Wireless Networks**
-    - Identifying and exploiting Wi-Fi vulnerabilities
-- **Privilege Escalation**
-    - Techniques to gain higher system access
-
-## **9. Internet Security**
-
-- **Types of Internet Security**
-    - Securing browsers, email, and online activities
-    - Threats like spam, scams, and phishing
-
-## **10. Vulnerability Assessment**
-
-- **Types of Vulnerability Assessment**
-    - Automated tools vs. manual assessments
-- **Risk Assessment**
-    - Identifying and prioritizing risks
-- **Administrative Controls**
-    - Policies and procedures to manage risks
-
-## **11. Incident Response**
-
-- **Incident Response Process**
-    - Preparation, detection, containment, eradication, recovery, and lessons learned
-    - Building and training an incident response team
+The course in Cyber Security and Ethical Hacking consists of the following modules:
 
 ---
+### 1. Introduction to Cybersecurity
+
+- Overview of cybersecurity concepts and the importance of protecting information systems
+
+- Key cybersecurity terminologies
+
+- Cybersecurity frameworks and best practices
+
+---
+### 2. Network Security Basics
+
+- Understanding network infrastructure and security protocols
+
+- Securing networks through firewalls, VPNs, and IDS/IPS
+
+---
+
+## 3. Operating System Security
+
+- Securing Windows and Linux operating systems
+
+- File system permissions and user management
+
+- Hardening operating systems against attacks
+
+---
+## 4. Cryptography and Encryption
+
+- Principles of cryptography
+
+- Symmetric and asymmetric encryption
+
+- Digital signatures and certificates
+
+---
+### 5. Cyber Threats and Attack Vectors
+
+- Common cyber threats, including malware, phishing, ransomware, and social engineering
+
+- Attack vectors and their countermeasures
+
+---
+
+## 6. Penetration Testing
+
+- Introduction to penetration testing methodologies
+
+- Tools and techniques for ethical hacking (e.g., Kali Linux)
+
+- Vulnerability scanning and exploitation
+
+---
+### 7. Vulnerability Assessment 
+
+- Tools and techniques for vulnerability assessment (e.g., Nessus, OpenVAS)
+
+- Performing penetration testing using tools like Metasploit, Nmap, and Wireshark
+
+---
+### 8. Web Application Security
+
+- Common web vulnerabilities such as SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF)
+
+- Securing web applications using OWASP guidelines
+
+---
+## 9. Cloud Security
+
+- Introduction to cloud computing and cloud security challenges
+
+- Securing cloud infrastructures (IaaS, PaaS, SaaS)
+
+- Identity and Access Management (IAM) in cloud environments
+
+---
+### 10. Incident Response and Forensics
+
+ - Incident response planning and execution
+
+ - Forensics and evidence collection
+
+ - Disaster recovery and business continuity planning
+
+----
+
+### 11. Cybersecurity Laws and Ethics
+
+- Overview of cybersecurity laws, data protection regulations, and ethical considerations
+
+- Complying with cybersecurity standards (GDPR, Kenyan Cybersecurity Act)
+
+----
+### 12. Emerging Trends in Cybersecurity
+
+
+- Artificial Intelligence (AI) and machine learning in cybersecurity
+
+- Cybersecurity challenges in IoT (Internet of Things)
+
+- Quantum computing and its impact on cybersecurity

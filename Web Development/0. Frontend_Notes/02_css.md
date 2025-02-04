@@ -158,20 +158,20 @@ Pseudo-selectors, often termed pseudo-classes, allow developers to target and st
 
 Below is a list of commonly-used pseudo-selectors, each paired with a brief description and a link to its documentation on MDN for deeper insights:
 
-| Pseudo-Class          | Description                                                                     | MDN Documentation                                                                                  |
-|-----------------------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| `:active`             | Targets elements currently being activated by the user (e.g., clicked links).   | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:active)                               |
-| `:focus`              | Highlights the currently focused element, commonly used with form fields.       | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus)                                |
-| `:hover`              | Styles an element when a user hovers over it with their cursor.                 | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover)                                |
-| `:link`               | Targets hyperlinks that haven't been visited by the user.                       | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:link)                                 |
-| `:visited`            | Selects links that have been visited by the user.                               | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited)                              |
-| `:checked`            | Targets checked elements like radio buttons or checkboxes.                      | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)                              |
-| `:first-child`        | Targets the first child element inside a parent element.                        | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)                          |
-| `:last-child`         | Selects the last child element within a parent.                                 | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child)                           |
-| `:nth-child(n)`       | Styles elements based on their position within a parent element.                | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)                            |
-| `:disabled`           | Targets disabled form controls.                                                | [MDN Docs for `:disabled`](https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled)             |
-| `:enabled`            | Targets enabled form controls.                                                 | [MDN Docs for `:enabled`](https://developer.mozilla.org/en-US/docs/Web/CSS/:enabled)               |
-| `:not(selector)`      | Selects elements that do not match a specified selector.                        | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)                                  |
+| Pseudo-Class     | Description                                                                   | MDN Documentation                                                                      |
+| ---------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `:active`        | Targets elements currently being activated by the user (e.g., clicked links). | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:active)                   |
+| `:focus`         | Highlights the currently focused element, commonly used with form fields.     | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus)                    |
+| `:hover`         | Styles an element when a user hovers over it with their cursor.               | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover)                    |
+| `:link`          | Targets hyperlinks that haven't been visited by the user.                     | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:link)                     |
+| `:visited`       | Selects links that have been visited by the user.                             | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited)                  |
+| `:checked`       | Targets checked elements like radio buttons or checkboxes.                    | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)                  |
+| `:first-child`   | Targets the first child element inside a parent element.                      | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)              |
+| `:last-child`    | Selects the last child element within a parent.                               | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child)               |
+| `:nth-child(n)`  | Styles elements based on their position within a parent element.              | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)                |
+| `:disabled`      | Targets disabled form controls.                                               | [MDN Docs for `:disabled`](https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled) |
+| `:enabled`       | Targets enabled form controls.                                                | [MDN Docs for `:enabled`](https://developer.mozilla.org/en-US/docs/Web/CSS/:enabled)   |
+| `:not(selector)` | Selects elements that do not match a specified selector.                      | [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)                      |
 
 ### Inheritance and Specificity in CSS
 

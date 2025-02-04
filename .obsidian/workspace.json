@@ -1,40 +1,24 @@
 {
   "main": {
-    "id": "cf3de9fce6603655",
+    "id": "eeedd6780c0c1263",
     "type": "split",
     "children": [
       {
-<<<<<<< HEAD
-        "id": "8d3c419187e82e28",
+        "id": "feae44270665d36e",
         "type": "tabs",
         "children": [
           {
-            "id": "38703ac989409627",
-=======
-        "id": "554f16e7ffdd07d5",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "3c74b2075ee1d477",
->>>>>>> 99050b3c229f1c2a4931df66584c248070104326
+            "id": "f7eab2885c27b938",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
-                "file": "CCNA_Class/7. IP Addressing.md",
-=======
-                "file": "CCNA_Class/Cisco IOS Software.md",
->>>>>>> 99050b3c229f1c2a4931df66584c248070104326
+                "file": "CCNA_Class/8. Subnetting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-<<<<<<< HEAD
-              "title": "7. IP Addressing"
-=======
-              "title": "Cisco IOS Software"
->>>>>>> 99050b3c229f1c2a4931df66584c248070104326
+              "title": "8. Subnetting"
             }
           }
         ]
@@ -43,27 +27,28 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7a8a59a86eafb0fb",
+    "id": "28e31831d8ca7e59",
     "type": "split",
     "children": [
       {
-        "id": "b89e1474b539bb5c",
+        "id": "6c2e382e485909d5",
         "type": "tabs",
         "children": [
           {
-            "id": "241d89c8fcd4a5ff",
+            "id": "9adc93989e35ea08",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "4b8e5418231fadf5",
+            "id": "337b1c74d6cbe62f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -80,7 +65,7 @@
             }
           },
           {
-            "id": "afb2c03b7d14c77f",
+            "id": "d83948169844ad89",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -93,24 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 226.5,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "c86732ba76e9b6a5",
+    "id": "1d4095e65fabfe7f",
     "type": "split",
     "children": [
       {
-        "id": "9ded542f08e4f956",
+        "id": "266ed7127c43d0b1",
         "type": "tabs",
         "children": [
           {
-            "id": "7c06eddbfe9d192b",
+            "id": "90c7eed733341ea4",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux-Admin-Notes/42. hardware.md",
+                "file": "Cyber Security_Notes/updates/Cyber Laws.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,46 +104,51 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 42. hardware"
+              "title": "Backlinks for Cyber Laws"
             }
           },
           {
-            "id": "e086ea65fa0c9794",
+            "id": "0208fcae17719de5",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cybersecurity ClassNotes.md",
+                "file": "Cyber Security_Notes/updates/Cyber Laws.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Cybersecurity ClassNotes"
+              "title": "Outgoing links from Cyber Laws"
             }
           },
           {
-            "id": "865fa080ea4a4553",
+            "id": "4157e337eb445c1a",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "fe1782b041cc19ed",
+            "id": "c3c15acaa3362d84",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cybersecurity ClassNotes.md"
+                "file": "Cyber Security_Notes/updates/Cyber Laws.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Cybersecurity ClassNotes"
+              "title": "Outline of Cyber Laws"
             }
           }
         ]
@@ -179,83 +168,43 @@
       "command-palette:Open command palette": false
     }
   },
-<<<<<<< HEAD
-  "active": "38703ac989409627",
+  "active": "f7eab2885c27b938",
   "lastOpenFiles": [
-    "Trainer_Guide/Student Class Timetable.md",
-    "bookmarks_inceptor.html",
-    "Web Development/GIT/1. Introduction to Git.md",
-    "Web Development/GIT/2. GitHub.md",
-    "CCNA_Class/6. Hexadecimal.md",
-    "CCNA_Class/7. IP Addressing.md",
-    "CCNA_Class/5. Binary and Decimal Numbers.md",
-    "Cyber Security_Notes/5. Networking.md",
-    "CCNA_Class/1. Introduction to Networking.md",
-    "CCNA_Class/8. Subnetting.md",
+    "Cyber Security_Notes/5. Operating System Security.md",
+    "Security & Privacy in Linux OS.md",
     "Cybersecurity Course Outline.pdf",
-    "Web Development/GIT",
-    "Cyber Security_Notes/8. Cryptography.md",
-    "Web Development/2. CSS/5. CSS Styling 2.md",
-    "Web Development/Chapter4-CSS.pdf",
-    "Web Development/Chapter4-CSS.pdf.crdownload",
-    "Web Development/2. CSS/4. CSS Styling.md",
-    "Web Development/introduction-to-CSS.pdf",
-    "Web Development/introduction-to-CSS.pdf.crdownload",
-=======
-  "active": "3c74b2075ee1d477",
-  "lastOpenFiles": [
-    "CCNA_Class/7. IP Addressing.md",
-    "CCNA_Class/Cisco IOS Software.md",
-    "CCNA_Class/8. Subnetting.md",
+    "Cyber Security_Notes/ongoing/Hacking Operating System.md",
+    "Links.md",
+    "Cyber Security_Notes/updates/The Windows Registry.md",
+    "Cyber Security_Notes/more/Networking Commands.md",
+    "Cyber Security_Notes/ongoing/0. Prac.pdf",
+    "Cyber Security_Notes/ongoing/Cyber Laws.md",
+    "Cyber Security_Notes/more/The Windows Registry.md",
+    "Cyber Security_Notes/more/Cyber Laws.md",
+    "Cyber Security_Notes/more/Networking Commands For Windows and Linux.md",
+    "Cyber Security_Notes/more/Components of Operating System.md",
+    "Cyber Security_Notes/more/0. Prac.pdf",
+    "Cyber Security_Notes/more",
+    "Cyber Security_Notes/ongoing",
+    "Cyber Security_Notes/New folder",
+    "Cyber Security_Notes/updates/Components of Operating System.md",
     "Trainer_Guide/Student Class Timetable.md",
-    "CCNA_Class/Untitled.md",
-    "Web Development/4. Javascript/6. Functions.md",
-    "Web Development/4. Javascript/1. Introduction.md",
-    "Web Development/4. Javascript/5. Statements.md",
-    "Web Development/4. Javascript/4. Operators.md",
-    "Web Development/4. Javascript/3. Data Types.md",
-    "Web Development/4. Javascript/2. Variables.md",
-    "Statements in JavaScript.md",
-    "Web Development/4. Javascript/JS Notes.pdf",
-    "Web Development/3. Bootstrap 5/1. Introduction.md",
-    "Web Development/3. Bootstrap 5",
->>>>>>> 99050b3c229f1c2a4931df66584c248070104326
-    "Linux-Admin-Notes/README.md",
-    "Linux-Admin-Notes/42. hardware.md",
-    "Linux-Admin-Notes/41. disk_io_analysis.md",
-    "Linux-Admin-Notes/40. task_state_analysis.md",
-    "Linux-Admin-Notes/39. running_executables.md",
-    "Linux-Admin-Notes/38. utilities.md",
-    "Linux-Admin-Notes/37. dwm.md",
-    "Linux-Admin-Notes/36. selinux.md",
-    "Linux-Admin-Notes/35. ldap.md",
-    "Linux-Admin-Notes/34. network file system.md",
-    "Linux-Admin-Notes/33. logical_volume_management.md",
-    "Linux-Admin-Notes/32. partitions.md",
-    "Linux-Admin-Notes/31. virtual_machines.md",
-    "Cyber Security_Notes/updates/Cybersecurity Course Outline.pdf",
-    "Trainer_Guide/Web 6 months.docx",
-    "Trainer_Guide/Web 3 months.docx",
-<<<<<<< HEAD
-=======
-    "Cyber Security_Notes/Linux-Notes",
-    "Unconfirmed 170720.crdownload",
-    "Web Development/git-version-control.pdf",
-    "Web Development/sample_code/css/style.css",
-    "Web Development/sample_code/index.html",
->>>>>>> 99050b3c229f1c2a4931df66584c248070104326
-    "Images/Pasted image 20250109094019.png",
-    "Images/Pasted image 20250109092627.png",
-    "Images/Pasted image 20250109091029.png",
-    "Images/Pasted image 20250109090932.png",
-    "Images/Pasted image 20250109085825.png",
-    "CCNA_Class/images/WAN.png",
-    "Pasted image 20250111084608.png",
-    "Untitled.canvas",
-    "Untitled 2.canvas",
-    "Untitled 1.canvas",
-    "Images/Pasted image 20250109112500.png",
-    "Images/Pasted image 20250109111047.png",
-    "Golang_Notes/assets/images/go_build.JPG"
+    "Unconfirmed 991330.crdownload",
+    "Cyber Security_Notes/7. Network Devices.md",
+    "Cyber Security_Notes/6. Networking.md",
+    "Cyber Security_Notes/8. Network Security Attacks & Fundamentals.md",
+    "Cyber Security_Notes/9. Cryptography.md",
+    "Cyber Security_Notes/10. Introduction To Pentesting.md",
+    "Cyber Security_Notes/11. Information Gathering.md",
+    "Cyber Security_Notes/updates/Networking Commands For Windows and Linux.md",
+    "Data protection and cybersecurity laws in Kenya  CMS Expert Guide.md",
+    "Cyber Security_Notes/updates/Cyber Laws.md",
+    "Unconfirmed 36665.crdownload",
+    "Cyber Security_Notes/updates/0. Prac.pdf",
+    "Trainer_Guide/Cybersecurity Course Outline.md",
+    "CCNA_Class/2. Network Devices.md",
+    "CCNA_Class/1. Introduction to Networking.md",
+    "CCNA_Class/4. TCP-IP Model.md",
+    "Cyber Security_Notes/updates/Unconfirmed 405120.crdownload"
   ]
 }
