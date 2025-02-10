@@ -75,7 +75,8 @@ git status
 # Step 4: Add all modified files except .obsidian/workspace.json
 Write-Bold "Adding all changes to staging area" "Green"
 Show-Progress -Message "Staging files..."
-git add . -- ':!.obsidian/workspace.json'
+git add .    # Adds all files
+git reset .obsidian/workspace.json    # Unstages .obsidian/workspace.json
 
 # Step 5: Commit changes
 $commitMessage = "Updates Via Github Pilot"
