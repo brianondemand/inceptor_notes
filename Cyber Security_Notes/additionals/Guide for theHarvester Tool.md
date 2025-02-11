@@ -1,15 +1,4 @@
----
-title: "Step-by-Step Guide for theHarvester Tool"
-source: "https://www.infosectrain.com/blog/step-by-step-guide-for-theharvester-tool/"
-author:
-  - "[[InfosecTrain]]"
-published: 2024-12-04
-created: 2025-02-10
-description: "This information is primarily used during the reconnaissance phase of penetration testing or when conducting security assessments."
-tags:
-  - "clippings"
----
-**What is TheHarvester?**
+
 
 TheHarvester is a powerful and widely used OSINT (Open Source Intelligence) tool that helps Ethical Hackers, Penetration Testers, and cybersecurity professionals collect information related to target domains and organizations from various search engines, databases, and other publicly available services. The primary function of theHarvester is to gather critical information about a target domain, such as:
 
