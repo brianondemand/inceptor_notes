@@ -7,24 +7,24 @@ Both **Windows and Linux** have essential system directories that store **import
 
 Windows organizes system files into several **critical directories** within the **C:\ drive**.
 
-|**Folder**|**Location**|**Purpose**|
-|---|---|---|
-|**C:\Windows**|`C:\Windows\`|The main **Windows system folder**. Contains essential system files, DLLs, system logs, and core OS functions.|
-|**System32**|`C:\Windows\System32\`|Contains **critical system executables, drivers, and libraries** (e.g., `cmd.exe`, `taskmgr.exe`).|
-|**SysWOW64**|`C:\Windows\SysWOW64\`|Used on **64-bit Windows** to run **32-bit applications**.|
-|**Program Files**|`C:\Program Files\`|The default **installation directory** for **64-bit applications**.|
-|**Program Files (x86)**|`C:\Program Files (x86)\`|Stores **32-bit applications** on **64-bit Windows**.|
-|**Users**|`C:\Users\`|Contains **user profiles**, including Desktop, Documents, Downloads, and AppData.|
-|**AppData**|`C:\Users\Username\AppData\`|Stores **user-specific application data** (hidden by default).|
-|**Local**|`C:\Users\Username\AppData\Local\`|Stores **temporary app data**, cache, and settings.|
-|**Roaming**|`C:\Users\Username\AppData\Roaming\`|Stores **user settings** that sync across multiple devices.|
-|**Temp**|`C:\Windows\Temp\` or `%TEMP%`|Stores **temporary files** used by applications. Can be safely cleared.|
-|**System Volume Information**|`C:\System Volume Information\`|Stores **restore points, system backups, and indexing data**.|
-|**Windows.old**|`C:\Windows.old\`|Created when upgrading Windows, allowing users to revert to the previous version.|
-|**WinSxS**|`C:\Windows\WinSxS\`|Contains **Windows Component Store**, used for backward compatibility and updates.|
-|**Drivers**|`C:\Windows\System32\drivers\`|Stores **hardware drivers** needed for system operation.|
-|**Fonts**|`C:\Windows\Fonts\`|Contains installed system fonts.|
-|**Recycle Bin**|`C:\$Recycle.Bin\`|Stores deleted files before permanent removal.|
+| **Folder**                    | **Location**                         | **Purpose**                                                                                                    |
+| ----------------------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| **C:\Windows**                | `C:\Windows\`                        | The main **Windows system folder**. Contains essential system files, DLLs, system logs, and core OS functions. |
+| **System32**                  | `C:\Windows\System32\`               | Contains **critical system executables, drivers, and libraries** (e.g., `cmd.exe`, `taskmgr.exe`).             |
+| **SysWOW64**                  | `C:\Windows\SysWOW64\`               | Used on **64-bit Windows** to run **32-bit applications**.                                                     |
+| **Program Files**             | `C:\Program Files\`                  | The default **installation directory** for **64-bit applications**.                                            |
+| **Program Files (x86)**       | `C:\Program Files (x86)\`            | Stores **32-bit applications** on **64-bit Windows**.                                                          |
+| **Users**                     | `C:\Users\`                          | Contains **user profiles**, including Desktop, Documents, Downloads, and AppData.                              |
+| **AppData**                   | `C:\Users\Username\AppData\`         | Stores **user-specific application data** (hidden by default).                                                 |
+| **Local**                     | `C:\Users\Username\AppData\Local\`   | Stores **temporary app data**, cache, and settings.                                                            |
+| **Roaming**                   | `C:\Users\Username\AppData\Roaming\` | Stores **user settings** that sync across multiple devices.                                                    |
+| **Temp**                      | `C:\Windows\Temp\` or `%TEMP%`       | Stores **temporary files** used by applications. Can be safely cleared.                                        |
+| **System Volume Information** | `C:\System Volume Information\`      | Stores **restore points, system backups, and indexing data**.                                                  |
+| **Windows.old**               | `C:\Windows.old\`                    | Created when upgrading Windows, allowing users to revert to the previous version.                              |
+| **WinSxS**                    | `C:\Windows\WinSxS\`                 | Contains **Windows Component Store**, used for backward compatibility and updates.                             |
+| **Drivers**                   | `C:\Windows\System32\drivers\`       | Stores **hardware drivers** needed for system operation.                                                       |
+| **Fonts**                     | `C:\Windows\Fonts\`                  | Contains installed system fonts.                                                                               |
+| **Recycle Bin**               | `C:\$Recycle.Bin\`                   | Stores deleted files before permanent removal.                                                                 |
 
 ### 📌 Special Windows Directories
 
