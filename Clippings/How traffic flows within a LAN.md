@@ -91,7 +91,7 @@ Each Ethernet frame starts with an Ethernet **header**, which contains destinati
 Next, after the header, the middle section of the frame is payload/L3 packet (**46-1500 bytes**) including any headers for other protocols (e.g., **Internet Protocol**). The frame ends with **a frame check sequence (FCS), which is a 4-byte/32-bit cyclic redundancy check** used to detect any in-transit corruption of data.  
 
 The **maximum** size of an Ethernet frame in IEEE 802.3 is 1518 octets (1 octet = 1 byte = 8 bits). This includes 14 octets of header, 4 octets of the FCS, and 1500 octets of payload. The **minimum** size of an Ethernet frame is 64 octets, which includes 14 octets of header, 4 octets of the FCS, and 46 octets of payload. 
-
+~~~~
 There are some variations to the maximum frame size in IEEE 802.3. For example, the IEEE 802.3ac standard allows for a maximum frame size of 1522 bytes to accommodate the inclusion of an 802.1Q VLAN tag.
 
 \>Ethernet frame header
