@@ -36,6 +36,21 @@ function Display-Header {
     Write-Host ("-" * 80) -ForegroundColor DarkGray
 }
 
+# Function to check and pull updates from remote repository
+function Pull-Updates {
+    Write-Bold "Checking for updates from remote repository" "Green"
+    Show-Progress -Message "Fetching updates..."
+    git fetch
+    
+    $behindStatus = git status | Select-String "Your branch is behind" | Measure-Object
+    if ($behindStatus.Count -gt 0) {
+        Write-Bold "Updates available. Pulling latest changes..." "Yellow"
+        git pull --rebase
+    } else {
+        Write-Host "No updates available. The repository is up-to-date." -ForegroundColor Green
+    }
+}
+
 # Start script execution
 Display-Header
 
@@ -54,19 +69,8 @@ if ($remoteUrl -ne "git@github.com:brianondemand/inceptor_notes.git") {
 }
 Write-Host "Github repository matches!" -ForegroundColor Green
 
-# Step 2: Fetch updates and check if the repo is autodated
-Write-Bold "Fetching updates from remote repository" "Green"
-Show-Progress -Message "Fetching updates..."
-git fetch
-
-# Check if the local branch is autodated
-$branchStatus = git status | Select-String "Your branch is autodated" | Measure-Object
-if ($branchStatus.Count -gt 0) {
-    Write-Bold "The local repository is autodated. Pulling updates..." "Yellow"
-    git pull --rebase
-} else {
-    Write-Host "The local repository is up-to-date." -ForegroundColor Green
-}
+# Step 2: Fetch and pull updates if available
+Pull-Updates
 
 # Step 3: Check for local changes
 Write-Bold "Checking for local changes" "Green"
