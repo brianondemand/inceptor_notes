@@ -91,7 +91,7 @@ Each Ethernet frame starts with an Ethernet **header**, which contains destinati
 Next, after the header, the middle section of the frame is payload/L3 packet (**46-1500 bytes**) including any headers for other protocols (e.g., **Internet Protocol**). The frame ends with **a frame check sequence (FCS), which is a 4-byte/32-bit cyclic redundancy check** used to detect any in-transit corruption of data.  
 
 The **maximum** size of an Ethernet frame in IEEE 802.3 is 1518 octets (1 octet = 1 byte = 8 bits). This includes 14 octets of header, 4 octets of the FCS, and 1500 octets of payload. The **minimum** size of an Ethernet frame is 64 octets, which includes 14 octets of header, 4 octets of the FCS, and 46 octets of payload. 
-~~~~
+
 There are some variations to the maximum frame size in IEEE 802.3. For example, the IEEE 802.3ac standard allows for a maximum frame size of 1522 bytes to accommodate the inclusion of an 802.1Q VLAN tag.
 
 \>Ethernet frame header
@@ -303,61 +303,3 @@ Let’s say that PC3 is going to send a reply back to PC1. The destination and s
 SW2 already has an entry for the destination MAC Address .0001 in its MAC address table, so there is no need to flood the frame. Instead, it is forwarded normally out of the corresponding interface in the MAC address table, which is F0/3. The frame is received by SW1, which adds an entry for PC3’s MAC address in its MAC address table, with the interface F0/3, since that’s where it received the frame.
 
 Finally, since SW1 already has an entry for the destination MAC address in its own MAC address table, SW1 forwards the frame out of the corresponding interface, and it reaches its destination, PC1. 
-
-## Practice quiz questions
-
-**Quiz question 1**
-
-Which field of an Ethernet frame provides receiver clock synchronization? 
-
-A. preamble
-
-B. SFD
-
-C. Type
-
-D. FCS
-
-The answer is A, preamble. The preamble is a series of 1s and 0s (7 bytes of 10101010) which allows the receiving device to synchronize its receiver clock. The SFD signifies the end of the preamble. The type field indicates the type of packet encapsulated within the frame. The FCS is used to detect errors that occurred during transmission. 
-
-You can find four more practice questions for this lesson in Jeremy’s Ethernet LAN Switching (Part 1) video, cited below.
-
-## Key references
-
-Note: The resources cited below (in the “Key references” section of this document) are the main source of knowledge for these study notes/this lesson, unless stated otherwise.
-
-[Free CCNA | Ethernet LAN Switching (Part 1) | Day 5 | CCNA 200-301 Complete Course](https://www.youtube.com/watch?v=u2n762WG0Vo&list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ&index=10 "Free CCNA | Ethernet LAN Switching (Part 1) | Day 5 | CCNA 200-301 Complete Course")
-
-[Wikipedia contributors. (2023, February 28). Ethernet frame. In Wikipedia, The Free Encyclopedia. Retrieved April 9, 2023, from https://en.wikipedia.org/wiki/Ethernet\_frame](https://en.wikipedia.org/wiki/Ethernet_frame "Wikipedia contributors. (2023, February 28). Ethernet frame. In Wikipedia, The Free Encyclopedia. Retrieved April 9, 2023, from https://en.wikipedia.org/wiki/Ethernet_frame")
-
-## Related content
-
-[Automation and programmability – introduction](https://www.linkedin.com/pulse/automation-programmability-introduction-baha-mnaxc/)
-
-[CCNA configurations portal](https://www.linkedin.com/pulse/ccna-configurations-portal-baha-abu-shaqra-phd-dti-uottawa-/)
-
-[CCNA math portal](https://www.linkedin.com/pulse/ccna-math-portal-baha-abu-shaqra-phd-dti-uottawa-/)
-
-[CCNA Security Fundamentals portal](https://www.linkedin.com/pulse/ccna-security-fundamentals-portal-baha-abu-shaqra-phd-dti-uottawa-/)
-
-[CCNA wireless networking portal](https://www.linkedin.com/pulse/ccna-wireless-networking-portal-baha-abu-shaqra-phd-dti-uottawa-/)
-
-[Compliance frameworks and industry standards](https://dti-techs.gitbook.io/cybersecurity-grc)
-
-[Coursera’s top courses](https://academicbullying.wordpress.com/2023/10/07/coursera-courses-quiz-answers/)
-
-[How switches forward frames – ARP](https://itnetworkingskills.wordpress.com/2023/04/16/how-switches-forward-frames-arp/)
-
-[How to break into information security](https://www.linkedin.com/pulse/how-break-information-security-baha-abu-shaqra-phd/)
-
-[IT career paths – everything you need to know](https://dti-techs.gitbook.io/foundations-in-cybersecurity)
-
-[Networking Fundamentals](https://dti-techs.gitbook.io/networking-fundamentals/)
-
-[Networking (IT)](https://professionaludev.wordpress.com/networking-it/)
-
-[What is the Google Cybersecurity Professional Certificate?](https://professionaludev.wordpress.com/2023/08/16/what-is-the-google-cybersecurity-professional-certificate/)
-
-[What is the Google Data Analytics certification?](https://professionaludev.wordpress.com/2023/07/02/what-is-the-google-data-analytics-certification/)
-
-[DTI Courses](https://dtitechs.wordpress.com/)
