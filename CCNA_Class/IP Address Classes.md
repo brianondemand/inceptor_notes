@@ -1,0 +1,244 @@
+
+Some IP addresses are reserved by the Internet Assigned Numbers Authority (IANA). These are typically reserved for networks that carry a specific purpose on the Transmission Control Protocol/Internet Protocol (TCP/IP), which is used to interconnect devices. Four of these IP address classes include:
+
+- **0.0.0.0**: This IP address in IPv4 is also known as the default network. It is the non-routeable meta address that designates an invalid, non-applicable, or unknown network target.
+
+- **127.0.0.1**: This IP address is known as the loopback address, which a computer uses to identify itself regardless of whether it has been assigned an IP address.
+
+- **169.254.0.1** to **169.254.254.254**: A range of addresses that are automatically assigned if a computer is unsuccessful in an attempt to receive an address from the DHCP.
+
+- **255.255.255.255**: An address dedicated to messages that need to be sent to every computer on a network or broadcasted across a network.
+
+
+Further reserved IP addresses are for what is known as subnet classes. Subnetworks are small computer networks that connect to a bigger network via a router. 
+
+The subnet can be assigned its own IP address system, so that all devices connecting to it can communicate with each other without having to send data via the wider network.
+
+#### Class A Public & Private IP Address Range
+
+Class A addresses are for networks with large number of total hosts. Class A allows for 126 networks by using the first octet for the network ID. 
+
+The first bit in this octet, is always zero. The remaining seven bits in this octet complete the network ID. 
+
+The 24 bits in the remaining three octets represent the hosts ID and allows for approximately 17 million hosts per network. Class A network number values begin at 1 and end at 127.
+
+- Public IP Range: 1.0.0.0 to 127.0.0.0
+    - First octet value range from 1 to 127
+- Private IP Range: 10.0.0.0 to 10.255.255.255
+- Subnet Mask: 255.0.0.0 (8 bits)
+- Number of Networks: 126
+- Number of Hosts per Network: 16,777,214
+
+---
+
+#### Class B Public & Private IP Address Range
+
+Class B addresses are for medium to large sized networks. Class B allows for 16,384 networks by using the first two octets for the network ID. 
+
+The first two bits in the first octet are always 1 0. The remaining six bits, together with the second octet, complete the network ID. 
+
+The 16 bits in the third and fourth octet represent host ID and allows for approximately 65,000 hosts per network. Class B network number values begin at 128 and end at 191.
+
+- Public IP Range: 128.0.0.0 to 191.255.0.0
+    - First octet value range from 128 to 191
+- Private IP Range: 172.16.0.0 to 172.31.255.255 
+- Subnet Mask: 255.255.0.0 (16 bits)
+- Number of Networks: 16,382
+- Number of Hosts per Network: 65,534
+
+---
+
+#### Class C Public & Private IP Address Range
+
+Class C addresses are used in small local area networks (LANs). Class C allows for approximately 2 million networks by using the first three octets for the network ID. 
+
+In a class C IP address, the first three bits of the first octet are always 1 1 0. And the remaining 21 bits of first three octets complete the network ID. 
+
+The last octet (8 bits) represent the host ID and allows for 254 hosts per network. Class C network number values begins at 192 and end at 223.
+
+- Public IP Range: 192.0.0.0 to 223.255.255.0
+    - First octet value range from 192 to 223
+- Private IP Range: 192.168.0.0 to 192.168.255.255 
+- Special IP Range: 127.0.0.1 to 127.255.255.255 
+- Subnet Mask: 255.255.255.0 (24 bits)
+- Number of Networks: 2,097,150
+- Number of Hosts per Network: 254
+
+---
+
+#### Class D IP Address Range
+
+Class D IP addresses are not allocated to hosts and are used for multicasting. 
+
+**Multicasting** allows a single host to send a single stream of data to thousands of hosts across the Internet at the same time. It is often used for audio and video streaming, such as IP-based cable TV networks. 
+
+Another example is the delivery of real-time stock market data from one source to many brokerage companies.
+
+- Range: 224.0.0.0 to 239.255.255.255
+    - First octet value range from 224 to 239
+- Number of Networks: N/A
+- Number of Hosts per Network: Multicasting
+
+---
+
+#### Class E IP Address Class
+
+Class E IP addresses are not allocated to hosts and are not available for general use. These are reserved for research purposes.
+
+- Range: 240.0.0.0 to 255.255.255.255
+    - First octet value range from 240 to 255
+- Number of Networks: N/A
+- Number of Hosts per Network: Research/Reserved/Experimental
+
+
+----
+
+##### Summary:
+
+1. **Class A**: IP addresses between **10.0.0.0** and **10.255.255.255**
+2. **Class B**: IP addresses between **172.16.0.0** and **172.31.255.255**
+3. **Class C**: IP addresses between **192.186.0.0** and **192.168.255.255**
+4. **Class D or multicast**: IP addresses between **224.0.0.0** and **239.255.255.255**
+5. **Class E, which are reserved for experimental usage**: IP addresses between **240.0.0.0** and **254.255.255.254**
+
+IP addresses listed under Class A, Class B, and Class C are most commonly used in the creation of subnets.
+
+Class D reserved for multicast addressing (group communication, e.g., video streaming). 
+
+Class E reserved for research and experimental purposes.
+
+|**Class**|**First Octet Range**|**Default Subnet Mask**|**Purpose**|**Key Note**|
+|---|---|---|---|---|
+|A|0 - 127|255.0.0.0|Large networks|First bit is `0`|
+|B|128 - 191|255.255.0.0|Medium networks|First two bits are `10`|
+|C|192 - 223|255.255.255.0|Small networks|First three bits are `110`|
+|D|224 - 239|N/A|Multicasting|First four bits are `1110`|
+|E|240 - 255|N/A|Experimental/Research|First four bits are `1111`|
+
+----
+
+#### Private IP Addresses
+
+Within each network class, there are designated IP addresses that are reserved specifically for private/internal use only. 
+
+These IP addresses cannot be used on Internet-facing devices as they are non-routable. For example, web servers and FTP servers must use non-private IP addresses. 
+
+However, within your own home or business network, private IP addresses are assigned to your devices (such as workstations, printers, and home media server).
+
+- Class A Private Range: 10.0.0.0 to 10.255.255.255
+- Class B Private APIPA Range: 169.254.0.0 to 169.254.255.255
+    - _Automatic Private IP Addressing_ (APIPA) is a feature with _Microsoft Windows_-based computers to automatically assign itself an IP address within this range if a _Dynamic Host Configuration Protocol_ (DHCP) server is not available on the network. A DHCP server is a network device that is responsible for assigning IP addresses to devices on the network.  
+          
+        In your home, your Internet modem or router likely provides this functionality. In your work place, a _Microsoft Windows Server_, a network firewall, or some other specialized network device likely provides this functionality for the computers on your work network.
+- Class B Private Range: 172.16.0.0 to 172.31.255.255
+- Class C Private Range: 192.168.0.0 to 192.168.255.255
+
+---
+
+#### Special IP Addresses
+
+ IP Range: 127.0.0.1 to 127.255.255.255 are network testing addresses (also referred to as loop-back addresses). These are virtual IP address, in that they cannot be assigned to a device. 
+
+Specifically, the IP 127.0.0.1 is often used to troubleshoot network connectivity issues using the `ping command`. Specifically, it tests a computer's TCP/IP network software driver to ensure it is working properly.
+
+A **local broadcast address** (255.255.255.255) sends messages to all devices on the **same local network** and is not routed.
+
+Not routed  means that the broadcast message is confined to a **single network or subnet** and **does not pass through routers** to other networks.
+
+A **directed broadcast address** (e.g., 192.168.1.255) targets all devices on a **specific subnet** and can be routed.
+
+Routers can forward directed broadcasts to other networks as long as the broadcast is targeting a specific subnet.
+
+The **loopback address** (127.0.0.1) is used to test the network stack of the **local machine** without leaving the device.
+
+---
+
+## Loopback addresses
+
+The end of the Class A range is usually considered to be 126, not 127. The 127 range is reserved for loopback addresses, so it’s generally not considered part of the Class A range. The loopback address range is anything with a first octet of 127, so 127.0.0.0 to 127.255.255.255. 
+
+Note: the 0 range in Class A is also reserved (for documentation and examples), so some might say Class A really begins at 1, making the range 1-126. Practically speaking, the usable range is 1-126.
+
+**Loopback addresses are used to test the network stack (OSI and/or TCP/IP) of the local device.** If a device (e.g., a PC) sends any network traffic to an address in this range, it is simply processed back up the TCP/IP stack as if it were traffic received from another device. 
+
+In the image on the left, we used a Windows PC to ping 127.0.0.1, and you can see the responses. The PC is responding to its own pings. 
+
+![Loopback-addresses](https://itnetworkingskills.wordpress.com/wp-content/uploads/2024/05/506fa-loopback-addresses-13.webp?w=1201)
+
+
+In the image on the right, a ping was sent to a random IP address in the 127 range, 127.23.68.241, and again we see the PC responding back to its own ping.
+
+Notice the round trip times, all 0 milliseconds. That’s because the traffic isn’t going anywhere. The PC is just sending and receiving these pings to and from itself.
+
+
+## IPv4 address classes cont’d
+
+Here’s the earlier chart of IPv4 classes slightly modified. The chart only shows classes A, B, and C. A **prefix** length column is added, indicating the length of the **network portion** of the address. 
+
+![IPv4-address-classes](https://itnetworkingskills.wordpress.com/wp-content/uploads/2024/05/a2e77-ipv4-address-classes-14.webp?w=1201)
+
+
+Class A addresses use a /8 prefix, Class B addresses use a /16 prefix, and Class C addresses use a /24 prefix.
+
+If we look again at these three addresses we used in our examples, we can see they are Class A, Class B, and Class C addresses, and their prefix lengths match the table.
+
+![ipv4-classes-examples](https://itnetworkingskills.wordpress.com/wp-content/uploads/2024/05/8e5e0-ipv4-classes-examples-15.webp?w=1201)
+
+
+In Class A, there are fewer possible network addresses, however because the host portion is very long, there can be many hosts on each network. Class C is the opposite, there are many more possible networks, but because the host portion is smaller there are fewer hosts on each network.
+
+Let’s look at the numbers. This is another chart taken off of wikipedia.
+
+![ipv4-classes-table](https://itnetworkingskills.wordpress.com/wp-content/uploads/2024/05/8d529-ipv4-classes-table-16.webp?w=1201)
+
+>The leading bits column refers to the first bits of the first octet, displayed in the previous table. 
+
+>The “size of network number bit field” displays the number of bits in the network portion of the IP address, 8 for Class A, 16 for Class B, and 24 for Class C. 
+
+>The “size of rest bit field” indicates the remaining number of bits in the address, which is the host portion of the address. 24 bits for Class A, 16 for Class B, and 8 for Class C.
+
+>The “number of networks” column displays the number of possible networks in each class. Class A has 128 possible networks, Class B has about 16,000 networks, and Class C has about 2 million networks. 
+
+How were these numbers calculated? Let’s start with Class A. The network portion is one octet, the first octet, but the first bit in the first octet is reserved to indicate that it is a Class A address. This leaves 7 bits usable for networks or 2^7 = 128. In a Class B network, the first two bits are reserved to indicate that it is a Class B address, leaving 14 bits (16 – 2) for networks, so 2^14. In a Class C network, the first three bits are reserved to indicate the class, leaving 24 – 3 = 21.
+
+>“Addresses per network” is the maximum number of addresses, including the network address and broadcast address. Class A allows about 16.7 million hosts in each network, Class B allows about 65,000 hosts in each network, and Class C allows 256 hosts in each network. 
+
+Notice how the number of addresses per network for each class is calculated: 2 to the power of 8, 16, or 24, the exponents being the length of the host portion. 
+
+Note: the first address in each network is the network address and it cannot be assigned to hosts. The last address of the network is the broadcast address, which is the Layer 3 address used when you want to send traffic to all hosts in the local network, and it too cannot be assigned to hosts, so really the host count is two less, for example, 254 in Class C.
+
+## Netmasks
+
+A network mask (netmask) is a 32-bit number that is used to identify the network portion of an IP address. It is used in conjunction with an IP address to determine which hosts are in the same network and which hosts are in different networks.
+
+A netmask is created by setting network bits to 1s and host bits to 0s. In this way, the subnet mask separates the IP address into the network and host portions. For example, the IP address 192.168.1.100 has a network mask of 255.255.255.0. This means that the first 24 bits of the IP address (192.168.1) are used to identify the network portion, and the last 8 bits (100) are used to identify the host portion.
+
+The prefix length of an IP address indicates the size of the network portion of the address. The prefix length is often written in CIDR notation, which is a shorthand notation for representing IP addresses and their subnet masks. In CIDR notation, the prefix length is written after the IP address, separated by a slash. 
+
+The subnet mask value can be expressed using either the dotted decimal notation or the CIDR notation. For example, the subnet mask of a Class A IPv4 address in dotted decimal is 255.0.0.0. That’s the dotted decimal version of the binary 11111111, followed by 24 zeros. In CIDR notation, often called prefix length, a slash 8 (/8) is used to indicate the same subnet mask value of 255.0.0.0.
+
+![classes-ipv4-binary](https://itnetworkingskills.wordpress.com/wp-content/uploads/2024/05/203e2-classes-ipv4-binary-17.webp?w=1201)
+
+
+Using a slash followed by the length of the prefix is a newer way of indicating the subnet mask. On Juniper network devices you use the slash notation. However, Cisco devices use an older way of indicating the length of the subnet mask, i.e., using a dotted decimal netmask. 
+
+These prefix lengths and netmasks are the same things, just written in different ways.
+
+## Network address
+
+If the host portion of an IP address is all 0’s, it means it is the network address, the identifier of the network itself (network identifier or network ID). In our diagram here, the network on the left has the IP address 192.168.1.0/24. 
+
+![Network-address-network](https://itnetworkingskills.wordpress.com/wp-content/uploads/2024/05/33fdd-network-address-network-18.webp?w=1201)
+
+
+We know that /24 means the first three octets are the network portion, and the last octet is the host portion. Since, the host portion is 0, it means the last octet, the host portion, is all 0s. Therefore, this address, 192.168.1.0/24, is the network address. The network address cannot be assigned to a host.
+
+The network address is the first address of the network, but the first usable address is one above the network address, in this case it’s 192.168.1.1, which is assigned to PC1. 
+
+## Broadcast address
+
+The broadcast address of the network is the last address of the network. Like the network address, the broadcast address cannot be assigned to a host. So although it’s the last address in the network the last usable address is 1 under the broadcast address, in this case, that’s 192.168.1.254, the address assigned to R1’s G0/0 interface. 
+
+So the broadcast address is the Layer 3 address used to send a packet to all hosts on the local network. If a packet is sent with the destination IP address 192.168.1.255, what do you think will be the destination MAC address of the frame it is encapsulated in? 
+
+It will be all F’s, the broadcast MAC Address. If PC1, for example, sent a ping to 192.168.1.255, it would be received by PC2 and R1’s G0/0 interface.
