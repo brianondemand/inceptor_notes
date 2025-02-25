@@ -53,7 +53,7 @@ git add .
 git reset .obsidian/workspace.json
 
 # Step 5: Commit changes
-commit_message="Updates Via Github Pilot"
+commit_message="Updates Via Github Sync"
 echo "Committing changes..."
 git commit -m "$commit_message"
 
