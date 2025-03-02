@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4c083b000fd08747",
+        "id": "d28957cd7ac06ba7",
         "type": "tabs",
         "children": [
           {
-            "id": "836d828ad53f7303",
+            "id": "54acc8b34f469312",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "CCNA_Class/20. VLANs (Virtual Local Area Networks).md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "20. VLANs (Virtual Local Area Networks)"
             }
           }
         ]
@@ -164,8 +168,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d591b7f5ebcb550",
+  "active": "54acc8b34f469312",
   "lastOpenFiles": [
+    "Clippings/Configuring access ports on Cisco switches.md",
+    "Trainer_Guide/CCNA Course Catalog.md",
+    "CCNA_Class/20. VLANs (Virtual Local Area Networks).md",
+    "CCNA_Class/11. IPv4 Addressing & Classes.md",
+    "CCNA_Class/19. Subnetting.md",
+    "CCNA_Class/12. Introduction to IPv4 Header.md",
+    "CCNA_Class/10. IP Address.md",
+    "CCNA_Class/1.2 Network Topology.md",
+    "CCNA_Class/1.1 Networking Devices.md",
+    "CCNA_Class/18. Configuring Static Routes on Cisco routers.md",
+    "Clippings/Configuring static routes on Cisco routers.md",
+    "CCNA_Class/17. Routing Fundamentals.md",
+    "Clippings/Types of Routing - GeeksforGeeks.md",
     "Cyber Security_Notes/14. Wireshark.md",
     "Clippings/Wireshark Tutorial for Beginners - AnsonAlex.com.md",
     "Clippings/Wireshark User Interface (GUI) Overview  NetworkProGuide.md",
@@ -188,7 +205,6 @@
     "Web Development/2. CSS/9. CSS Flexbox & Grid Layout.md",
     "Web Development/2. CSS/8. CSS Positioning & Layout.md",
     "Web Development/2. CSS/7. CSS Combinators.md",
-    "Worksheet.md",
-    "Clippings/Wireshark User Interface (GUI) Overview  NetworkProGuide 1.md"
+    "Worksheet.md"
   ]
 }
