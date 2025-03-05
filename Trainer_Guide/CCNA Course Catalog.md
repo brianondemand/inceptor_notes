@@ -1,135 +1,100 @@
 This comprehensive course outline is designed to guide learners through the fundamentals of networking, progressing from absolute beginner to expert level in CCNA Level 1. Each module includes free resources to supplement your learning.
 
-## Module 1: Introduction to Networking ||
+---
 
-### 1.1 What is a Network?
-- Basic concepts of computer networks
-- Types of networks (LAN, WAN, MAN)
-- Network topologies
+## **Part 1: Network Fundamentals** 
+ 
+1. **Introduction to the CCNA**  
+   - Overview of the CCNA certification and what to expect in networking fundamentals.  
 
-### 1.2 The OSI Model 
-- Understanding the 7 layers of the OSI model
-- Function of each layer
-- Real-world applications of the OSI model
+2. **Network Devices**  
+   - Explanation of routers, switches, firewalls, access points, and other network devices.  
 
-### 1.3 TCP/IP Model 
-- Comparison with OSI model
-- TCP/IP layers and their functions
-- Common protocols in each layer
+3. **Cables, Connectors, and Ports**  
+   - Types of cables (Ethernet, fiber, coaxial), connectors (RJ45, LC, SC), and ports used in networking.  
 
-## Module 2: Network Devices and Cabling ||
+4. **The TCP/IP Networking Model**  
+   - The OSI and TCP/IP models, their layers, and how data moves across networks.  
 
-### 2.1 Network Devices
-- Routers, switches, and hubs
-- Firewalls and access points
-- Network Interface Cards (NICs)
+5. **The Cisco IOS CLI**  
+   - Introduction to Cisco's Command Line Interface (CLI) for configuring network devices.  
 
-### 2.2 Network Cabling
-- Types of network cables (Ethernet, fiber optic)
-- Connectors and their uses
-- Cable standards and categories
+6. **Ethernet LAN Switching**  
+   - How Ethernet switching works, MAC addresses, and collision domains.  
 
-## Module 3: IP Addressing and Subnetting ||
+7. **IPv4 Addressing**  
+   - Understanding IPv4 address structure, subnetting, and addressing schemes.  
 
-### 3.1 IPv4 Addressing
-- Understanding IP addresses
-- Classes of IP addresses
-- Public vs. Private IP addresses
+8. **Router and Switch Interfaces**  
+   - Different types of router and switch interfaces, including physical and logical interfaces.  
 
-### 3.2 Subnetting Basics
-- What is subnetting?
-- Subnet masks
-- CIDR notation
+---
 
-### 3.3 Advanced Subnetting
-- Subnetting practice
-- Variable Length Subnet Masking (VLSM)
-- Subnetting scenarios
+## **Part 2: Routing Fundamentals and Subnetting**  
 
-## Module 4: Switching Concepts
+1. **Routing Fundamentals**  
+   - How routers forward packets, routing tables, and administrative distance.  
 
-### 4.1 Ethernet Switching
-- MAC addresses
-- Switch forwarding methods
-- Collision and broadcast domains
+2. **The Life of a Packet**  
+    - Step-by-step journey of a packet through a network, from source to destination.  
 
+3. **Subnetting IPv4 Networks**  
+    - Breaking down IPv4 subnets, subnet masks, and CIDR notation.  
 
-### 4.2 VLANs
-- VLAN concepts and benefits
-- VLAN configuration
-- Inter-VLAN routing
+---
 
-### 4.3 Spanning Tree Protocol (STP)
-- Purpose of STP
-- STP operation and port states
-- Rapid STP and Multiple STP
+## **Part 3: Layer 2 Concepts**  
 
-## Module 5: Routing Fundamentals
+1. **VLANs (Virtual Local Area Networks)**  
+    - What VLANs are, their benefits, and how they segment network traffic.  
 
-### 5.1 Introduction to Routing
-- Router functions and components
-- Routing table basics
-- Directly connected routes
+2. **Dynamic Trunking Protocol (DTP) and VLAN Trunking Protocol (VTP)**  
+    - Protocols that help manage VLANs across multiple switches.  
 
-### 5.2 Static Routing
-- Configuring static routes
-- Default routes
-- Floating static routes
+3. **Spanning Tree Protocol (STP)**  
+    - Preventing network loops in Layer 2 networks and ensuring redundancy.  
 
-### 5.3 Dynamic Routing Protocols
-- Introduction to OSPF and EIGRP
-- Distance vector vs. Link state protocols
-- Administrative distance
+4. **Rapid Spanning Tree Protocol (RSTP)**  
+    - Faster convergence of STP to minimize downtime in network changes.  
 
-## Module 6: Network Services
+5. **EtherChannel**  
+    - Combining multiple links into one logical link to increase bandwidth and redundancy.  
 
-### 6.1 DHCP
-- DHCP operation
-- DHCP server and client configuration
-- DHCP relay agents
+---
 
-### 6.2 DNS
-- DNS hierarchy
-- DNS record types
-- DNS resolution process
+## **Part 4: Dynamic Routing and First Hop Redundancy Protocols**  
 
-### 6.3 NAT and PAT
-- NAT concepts and types
-- Configuring static and dynamic NAT
-- Port Address Translation (PAT)
+1. **Dynamic Routing**  
+    - Understanding routing protocols like RIP, OSPF, and EIGRP.  
 
-## Module 7: Network Security Fundamentals
+2. **Open Shortest Path First (OSPF)**  
+    - OSPF routing protocol concepts, link-state advertisements, and area-based routing.  
 
-### 7.1 Security Threats and Vulnerabilities
-- Common network attacks
-- Malware types
-- Social engineering
+3. **First Hop Redundancy Protocols (FHRP)**  
+    - Ensuring network availability using HSRP, VRRP, and GLBP.  
 
-### 7.2 Access Control Lists (ACLs)
-- Types of ACLs
-- Configuring standard and extended ACLs
-- Applying ACLs to interfaces
+---
+
+## **Part 5: IPv6**  
+
+1. **IPv6 Addressing**  
+    - Structure of IPv6 addresses, benefits over IPv4, and address types.  
+
+2. **IPv6 Routing**  
+    - How routing works in IPv6, static and dynamic routing protocols like OSPFv3.  
+
+---
+
+## **Part 6: Layer 4 and IP Access Control Lists (ACLs)** 
+ 
+1. **Transmission Control Protocol (TCP) and User Datagram Protocol (UDP)**  
+    - The difference between TCP (reliable, connection-oriented) and UDP (faster, connectionless).  
+
+2. **Standard Access Control Lists (ACLs)**  
+    - Filtering traffic based on source IP addresses to control network access.  
+
+3. **Extended Access Control Lists (ACLs)**  
+    - More advanced filtering using source/destination IP, ports, and protocols.  
 
 
-### 7.3 Basic Wireless Security
-- Wireless encryption methods (WEP, WPA, WPA2)
-- Configuring wireless security on access points
-- Best practices for wireless network security
-
-## Module 8: Network Automation and Programmability
-
-### 8.1 Introduction to Network Automation
-- Benefits of network automation
-- Automation tools and platforms
-- Basic scripting concepts
-
-### 8.2 REST APIs
-- Understanding REST API concepts
-- Using APIs for network management
-- API authentication methods
-
-### 8.3 Basic Network Programmability
-- Introduction to Python for networking
-- Using Python to interact with network devices
-- Simple network automation scripts
-
+---
