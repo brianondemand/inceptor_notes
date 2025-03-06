@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "03912a2e1972817c",
+    "id": "ddee613e028d5869",
     "type": "split",
     "children": [
       {
-        "id": "f303129a0e6ce941",
+        "id": "9766b6dd9cedddf5",
         "type": "tabs",
         "children": [
           {
-            "id": "ad0e12dd272eb525",
+            "id": "8cd7fe348d8441ce",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "906d838783a4a64e",
+    "id": "e66bbf5129509cd2",
     "type": "split",
     "children": [
       {
-        "id": "acacec24573df294",
+        "id": "4b7c0cbc5da135ea",
         "type": "tabs",
         "children": [
           {
-            "id": "3d591b7f5ebcb550",
+            "id": "8d3a786ca12cd8a8",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "a8fdcc6a36c4d9e1",
+            "id": "a98d7c5c6e83c593",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "ce614fcb7526e97d",
+            "id": "40416a20f13c2358",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,23 +74,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 284.5
+    "width": 300
   },
   "right": {
-    "id": "cbabb26e5c8b0f03",
+    "id": "fe727b86f505ba70",
     "type": "split",
     "children": [
       {
-        "id": "aab963d5e17f609d",
+        "id": "6c4de338498691fb",
         "type": "tabs",
         "children": [
           {
-            "id": "d5cd02d4e199c486",
+            "id": "0becb80d38ee758b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cyber Security_Notes/14. Wireshark.md",
+                "file": "Web Development/2. CSS/8. CSS Positioning & Layout.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,25 +100,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 14. Wireshark"
+              "title": "Backlinks for 8. CSS Positioning & Layout"
             }
           },
           {
-            "id": "a89f4d268ec5406f",
+            "id": "30bdd7b910b820ab",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cyber Security_Notes/14. Wireshark.md",
+                "file": "Web Development/2. CSS/8. CSS Positioning & Layout.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 14. Wireshark"
+              "title": "Outgoing links from 8. CSS Positioning & Layout"
             }
           },
           {
-            "id": "9c6287170d6e3e30",
+            "id": "672d59b0fa3958c0",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,18 +133,18 @@
             }
           },
           {
-            "id": "f4df177a8484f33c",
+            "id": "842564bb0bb84438",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cyber Security_Notes/14. Wireshark.md",
+                "file": "Web Development/2. CSS/8. CSS Positioning & Layout.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 14. Wireshark"
+              "title": "Outline of 8. CSS Positioning & Layout"
             }
           }
         ]
@@ -164,36 +164,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ad0e12dd272eb525",
+  "active": "8cd7fe348d8441ce",
   "lastOpenFiles": [
-    "Worksheet.md",
-    "Web Development/4. Javascript/5. Statements.md",
-    "Web Development/4. Javascript/6. Functions.md",
-    "CCNA_Class/17. Routing Fundamentals.md",
-    "Clippings/Types of Routing - GeeksforGeeks.md",
-    "Cyber Security_Notes/14. Wireshark.md",
-    "Images",
-    "Clippings/Wireshark Tutorial for Beginners - AnsonAlex.com.md",
-    "Clippings/Wireshark User Interface (GUI) Overview  NetworkProGuide.md",
-    "Clippings/wireshark-packet-list-pane-user-interface-ui.webp",
-    "Clippings/wireshark-filter-toolbar-button-diagram.webp",
-    "Clippings/Wireshark Display Filters Cheat Sheet  NetworkProGuide.md",
-    "Clippings/wireshark-packet-bytes-pane-user-interface-ui (1).webp",
-    "Clippings/wireshark-packet-bytes-pane-user-interface-ui.webp",
-    "Clippings/wireshark-packet-details-pane-user-interface-ui.webp",
-    "Clippings/wireshark-intelligent-scrollbar-user-interface-ui.webp",
-    "Clippings/wireshark-interface-list-diagram.webp",
-    "Clippings/wireshark-main-toolbar-button-diagram.webp",
-    "Course-Images",
-    "Cyber Security_Notes/additionals/File Systems.md",
-    "Cyber Security_Notes/additionals/Linux Basic Commands.md",
-    "Cyber Security_Notes/additionals/Types of Computer Memory.md",
-    "Cyber Security_Notes/additionals/Proxy vs VPN.md",
-    "Trainer_Guide/Cybersecurity Course Outline.pdf",
-    "Web Development/2. CSS/6. CSS Styling III.md",
+    "Web Development/2. CSS/10 . Media Queries.md",
     "Web Development/2. CSS/9. CSS Flexbox & Grid Layout.md",
-    "Web Development/2. CSS/8. CSS Positioning & Layout.md",
+    "Web Development/2. CSS/11. Specificity & !important Rules.md",
+    "Cyber Security_Notes/16. Man-in-the-Middle (MITM) Attack.md",
+    "Cyber Security_Notes/15. Hping3.md",
+    "CCNA_Class/17. Routing Fundamentals.md",
+    "Trainer_Guide/Cybersecurity Course Outline.md",
+    "Trainer_Guide/CCNA Course Index.pdf",
+    "Trainer_Guide/CCNA Course Catalog.md",
+    "README.md",
+    "Web Development/6. PHP/php_cookbook.pdf",
+    "Web Development/2. CSS/12. CSS Components.md",
     "Web Development/2. CSS/7. CSS Combinators.md",
-    "Clippings/Wireshark User Interface (GUI) Overview  NetworkProGuide 1.md"
+    "Web Development/2. CSS/8. CSS Positioning & Layout.md",
+    "Web Development/2. CSS/6. CSS Styling III.md",
+    "Cyber Security_Notes/14. Wireshark.md",
+    "CCNA_Class/16. Configuring Switch Interfaces.md",
+    "Web Development/Introduction to Web Development.md",
+    "Web Development/7. MySQL/mysql_tutorial.pdf",
+    "Web Development/4. Javascript/JS Notes.pdf",
+    "Clippings/Untitled.md",
+    "Web Development/4. Javascript/7. Events.md",
+    "Web Development/4. Javascript/6. Functions.md",
+    "Web Development/2. CSS/5. CSS Styling II.md",
+    "Worksheet.md",
+    "CCNA_Class/20. VLANs (Virtual Local Area Networks).md",
+    "Web Development/1. HTML/13. Layout Elements and Techniques.md"
   ]
 }
