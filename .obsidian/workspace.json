@@ -11,10 +11,28 @@
             "id": "ad0e12dd272eb525",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Clippings/SYN-FLOOD-DENIAL OF SERVICE(DOS) ATTACK.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "SYN-FLOOD-DENIAL OF SERVICE(DOS) ATTACK"
+            }
+          },
+          {
+            "id": "bde44af3fe0959f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Worksheet.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Worksheet"
             }
           }
         ]
@@ -166,6 +184,8 @@
   },
   "active": "ad0e12dd272eb525",
   "lastOpenFiles": [
+    "Cyber Security_Notes/15. Hping3.md",
+    "Clippings/SYN-FLOOD-DENIAL OF SERVICE(DOS) ATTACK.md",
     "Worksheet.md",
     "Web Development/4. Javascript/5. Statements.md",
     "Web Development/4. Javascript/6. Functions.md",

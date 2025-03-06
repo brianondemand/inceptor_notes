@@ -1,75 +1,42 @@
 
 
-## Flexbox Properties
+**2. Perform a TCP SYN Scan (detect open ports)**
 
-- `display: flex`: Enables flexbox layout for flexible positioning of elements.
+```bash
+hping3 -S -p 80 192.168.1.1
+```
 
-    ```css
-    div {
-      display: flex;
-    }
-    ```
+- `-S`: Sends **SYN packets** to test if a port is open.
+- `-p 80`: Target **port 80** (HTTP).
 
-- `justify-content`: Aligns items along the main axis.
+**3. Detect firewalls (Send ACK packets)**
 
-    ```css
-    div {
-      justify-content: center;
-    }
-    ```
+```bash
+hping3 -A -p 80 192.168.1.1
+```
 
-- `align-items`: Aligns items along the cross-axis.
+- `-A`: Sends **ACK packets** (firewalls usually block these if no prior connection exists).
 
-    ```css
-    div {
-      align-items: center;
-    }
-    ```
+ **4. Spoof Source IP Address (IP Spoofing)**
 
+```bash
+hping3 -S -p 443 -a 10.10.10.10 192.168.1.1
+```
 
-## Grid Properties
+- `-a 10.10.10.10`: Fake source IP **(spoofing attack simulation)**.
 
-- `display: grid`: Enables CSS Grid layout for structuring elements.
+ **5. Simulate a Denial-of-Service (DoS) attack**
 
-    ```css
-    div {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    ```
+```bash
+hping3 -S --flood -p 80 192.168.1.1
+```
 
+- `--flood`: Sends packets **as fast as possible** (network stress testing).
 
-## Animations & Transitions
+ **6. Perform a TCP Traceroute**
 
-- `transition`: Creates smooth changes over time.
+```bash
+hping3 --traceroute -S -p 80 192.168.1.1
+```
 
-    ```css
-    div {
-      transition: all 0.3s ease;
-    }
-    ```
-
-- `animation`: Applies an animation effect to an element.
-
-    ```css
-    div {
-      animation: fadeIn 2s;
-    }
-    ```
-
-- `@keyframes`: Defines the sequence of animation frames.
-
-    ```css
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-    ```
-
-
----
-
+- `--traceroute`: Maps **network path** using **TCP instead of ICMP**.
