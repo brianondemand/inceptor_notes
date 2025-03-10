@@ -1,0 +1,99 @@
+### JavaScript has 8 Datatypes
+
+- String  
+- Number  
+- Bigint  
+- Boolean  
+- Undefined  
+- Null  
+- Symbol  
+- Object
+
+
+- **Numbers** - are values that can be processed and calculated. You don't enclose them in quotation marks. The numbers can be either positive or negative.
+
+- **Strings** - are a series of letters and numbers enclosed in quotation marks. JavaScript uses the string literally; it doesn't process it. You'll use strings for text you want displayed or values you want passed along.
+
+- **Boolean** (true/false) - lets you evaluate whether a condition meets or does not meet specified criteria.
+
+- **Null** - is an empty value. null is not the same as 0 -- 0 is a real, calculable number, whereas null is the absence of any value.
+
+
+| **Data Type** | **Description**                                                                                     | **Example**                                   | **Type**      |
+| ------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------- |
+| **Number**    | Represents both integer and floating point numbers.                                                 | `let x = 10;``let y = 3.14;`                  | Primitive     |
+| **String**    | Represents a sequence of characters (text).                                                         | `let name = "John";``let greeting = 'Hello';` | Primitive     |
+| **Boolean**   | Represents a logical entity that can be either `true` or `false`.                                   | `let isActive = true;``let isDone = false;`   | Primitive     |
+| **Undefined** | Represents a variable that has been declared but not assigned a value.                              | `let x;``console.log(x); // undefined`        | Primitive     |
+| **Null**      | Represents the intentional absence of any object value.                                             | `let person = null;`                          | Primitive     |
+| **Symbol**    | Represents a unique and immutable value often used for object property keys.                        | `let sym = Symbol('id');`                     | Primitive     |
+| **BigInt**    | Represents numbers larger than `Number.MAX_SAFE_INTEGER` or smaller than `Number.MIN_SAFE_INTEGER`. | `let big = 12345678901234567890n;`            | Primitive     |
+| **Object**    | Represents collections of data and more complex entities.                                           | `let obj = { name: "Alice", age: 25 };`       | Non-Primitive |
+| **Array**     | Special type of object used for storing ordered collections of data.                                | `let arr = [1, 2, 3, 4];`                     | Non-Primitive |
+| **Function**  | A block of code designed to perform a particular task.                                              | `function sayHello() { return "Hello!"; }`    | Non-Primitive |
+| **Date**      | Used to represent dates and times.                                                                  | `let date = new Date();`                      | Non-Primitive |
+| **RegExp**    | Represents regular expressions used for pattern matching in strings.                                | `let regex = /ab+c/;`                         | Non-Primitive |
+
+---
+
+### Primitive Data Types
+
+Primitive data types include **Number, String, Boolean, Null, Undefined, Symbol,** and **BigInt**.
+
+- **Number** represents both integers and floating-point numbers. JavaScript uses a **64-bit floating-point format**, which allows it to handle very large and very small numbers but may introduce precision issues when working with decimals.
+  
+- **String** represents textual data and can be enclosed in single quotes (`'`), double quotes (`"`), or backticks (`` ` ``). Strings in JavaScript are **immutable**, meaning their contents cannot be changed after creation.
+  
+- **Boolean** has only two values: **true** and **false**. It is commonly used in conditional statements and logical operations.
+  
+- **Null** represents the intentional absence of a value. It is often assigned to variables explicitly to indicate that they do not hold any meaningful value.
+  
+- **Undefined** is automatically assigned to variables that have been declared but not initialized. It signifies the absence of a value at the time of access.
+  
+- **Symbol** was introduced in ES6 and is used to create **unique and immutable identifiers**, often for object properties.
+  
+- **BigInt** was introduced in ES11 and is used to handle integers larger than the **maximum safe integer limit** in JavaScript, which is **2^53 - 1**. It is created by appending **n** to a number, such as `9007199254740991n`.
+
+### Non-Primitive Data Types
+
+Non-primitive data types include **Objects, Arrays, and Functions**.
+
+- **Objects** are collections of key-value pairs where values can be **any data type**, including other objects. Objects are created using curly braces `{}` or constructor functions. Example:
+
+
+    ```javascript
+let person = { name: "John", age: 30 };
+    ```
+
+- **Arrays** are a special type of object used for storing **ordered collections** of values. Arrays support various methods like `push()`, `pop()`, and `slice()` for data manipulation. Example:
+
+    ```javascript
+let numbers = [1, 2, 3, 4, 5];
+    ```
+
+- **Functions** are blocks of reusable code that can be assigned to variables and passed as arguments. They can be defined using **function declarations, function expressions, or arrow functions**. Example:
+
+```javascript
+function greet(name) {    return `Hello, ${name}`;}
+```
+
+
+### Type Conversion and Type Checking
+
+JavaScript allows **implicit (type coercion)** and **explicit** type conversions. Implicit conversion happens automatically, such as when a number is added to a string (`5 + "10"` results in `"510"`). Explicit conversion requires using functions like `Number()`, `String()`, or `Boolean()`.
+
+The `typeof` operator is used to check the type of a value. However, it has some inconsistencies, such as returning `"object"` for `null`. Example:
+
+```javascript
+console.log(typeof null); // "object"
+console.log(typeof 42); // "number"
+console.log(typeof "Hello"); // "string"
+```
+
+### Mutability and Reference Behavior
+
+Primitive values are **immutable** and stored directly in memory. Non-primitive values (objects, arrays) are stored **by reference**, meaning changes to one reference affect all others.
+
+Understanding JavaScript data types is crucial for writing efficient and error-free code. Since objects and arrays are reference types, modifying them through one variable affects all references to the same object. Developers must be aware of **shallow and deep copies** when working with complex data structures to avoid unintended side effects. Proper handling of data types ensures **robust and maintainable** JavaScript applications.
+
+
