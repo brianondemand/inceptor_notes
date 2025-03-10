@@ -43,7 +43,7 @@ This comprehensive course outline is designed to guide learners through the fund
 
 ---
 
-## **Part 3: Layer 2 Concepts**  
+## **Part 3: Layer 2 Concepts VLANs**   
 
 1. **VLANs (Virtual Local Area Networks)**  
     - What VLANs are, their benefits, and how they segment network traffic.  
