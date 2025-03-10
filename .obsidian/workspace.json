@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b82057a6c7860df5",
+        "id": "fbdee982c324b1fa",
         "type": "tabs",
         "children": [
           {
-            "id": "30d7cdbb29cb0232",
+            "id": "f0ca90991bbfd107",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web Development/2. CSS/11. Specificity & !important Rules.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "11. Specificity & !important Rules"
+              "title": "New tab"
             }
           }
         ]
@@ -168,8 +164,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "30d7cdbb29cb0232",
+  "active": "8d3a786ca12cd8a8",
   "lastOpenFiles": [
+    "Cyber Security_Notes/21. Wireless Local Area Network.md",
+    "Clippings/Introduction to Hacking Wireless Networks  Ethical Hacking.md",
+    "Cyber Security_Notes/17. Network Sniffing.md",
+    "Clippings/PenTest Tools.md",
+    "Clippings/Network Sniffing using Bettercap in Linux.md",
+    "Clippings/How to Set Up Bluetooth in Linux.md",
+    "Clippings/Configuring access ports on Cisco switches.md",
+    "Clippings/Guide to Enumeration Pentest All You Need to Know.md",
+    "Cyber Security_Notes/16. Man-in-the-Middle (MITM) Attack.md",
+    "Clippings/SYN-FLOOD-DENIAL OF SERVICE(DOS) ATTACK.md",
+    "Cyber Security_Notes/20. Enumeration.md",
+    "Cyber Security_Notes/19. The Metasploit Framework.md",
+    "Clippings/Wireshark Display Filters Cheat Sheet  NetworkProGuide.md",
+    "Web Development/4. Javascript/8. Variables.md",
+    "Web Development/4. Javascript/JS Notes.pdf",
+    "Web Development/4. Javascript/7. Events.md",
+    "Web Development/2. CSS/7. CSS Combinators.md",
+    "Web Development/2. CSS/12. CSS Components.md",
+    "Web Development/2. CSS/8. CSS Positioning & Layout.md",
+    "Web Development/2. CSS/9. CSS Flexbox & Grid Layout.md",
+    "Web Development/2. CSS/10 . Media Queries.md",
+    "Web Development/2. CSS/11. Specificity & !important Rules.md",
+    "Github Syn Assistant.ps1",
     "CCNA_Class/16. Configuring Switch Interfaces.md",
     "Trainer_Guide/inceptor_notes - Shortcut.lnk",
     "CCNA_Class/CCNA 200-301/Day 58 Lab - Wireless LANs.pkt",
@@ -179,31 +198,9 @@
     "CCNA_Class/CCNA 200-301/Day 50 Lab - DHCP Snooping.pkt",
     "CCNA_Class/CCNA 200-301/Day 49 Lab - Port Security.pkt",
     "CCNA_Class/CCNA 200-301/Day 47 Lab - QoS.pkt",
-    "CCNA_Class/CCNA 200-301/Day 46 Lab - Voice VLANs.pkt",
-    "CCNA_Class/CCNA 200-301/Day 45 Lab - Dynamic NAT.pkt",
     "Web Development/1. HTML/2. HTML Common Elements.md",
     "Web Development/1. HTML/1. INTRODUCTION.md",
     "Web Development/Introduction to Web Development.md",
-    "Clippings/Network Sniffing using Bettercap in Linux.md",
-    "Cyber Security_Notes/16. Man-in-the-Middle (MITM) Attack.md",
-    "Clippings/SYN-FLOOD-DENIAL OF SERVICE(DOS) ATTACK.md",
-    "Clippings/PenTest.md",
-    "Cyber Security_Notes/15. Hping3.md",
-    "Clippings/Untitled.md",
-    "Web Development/2. CSS/10 . Media Queries.md",
-    "Web Development/2. CSS/9. CSS Flexbox & Grid Layout.md",
-    "Web Development/2. CSS/11. Specificity & !important Rules.md",
-    "CCNA_Class/17. Routing Fundamentals.md",
-    "Trainer_Guide/Cybersecurity Course Outline.md",
-    "Trainer_Guide/CCNA Course Catalog.md",
-    "README.md",
-    "Web Development/2. CSS/12. CSS Components.md",
-    "Web Development/2. CSS/7. CSS Combinators.md",
-    "Web Development/2. CSS/8. CSS Positioning & Layout.md",
-    "Web Development/2. CSS/6. CSS Styling III.md",
-    "Cyber Security_Notes/14. Wireshark.md",
-    "Web Development/4. Javascript/7. Events.md",
-    "Web Development/4. Javascript/6. Functions.md",
-    "Web Development/2. CSS/5. CSS Styling II.md"
+    "Cyber Security_Notes/15. Hping3.md"
   ]
 }
