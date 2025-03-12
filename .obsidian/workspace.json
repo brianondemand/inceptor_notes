@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "ddee613e028d5869",
+    "id": "430853158df135b6",
     "type": "split",
     "children": [
       {
-        "id": "fbdee982c324b1fa",
+        "id": "6cae0e09147387c6",
         "type": "tabs",
         "children": [
           {
-            "id": "f0ca90991bbfd107",
+            "id": "900ee6f987ab954a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Cyber Security_Notes/18. Tcpdump.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "18. Tcpdump"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e66bbf5129509cd2",
+    "id": "6437ef2968c8850b",
     "type": "split",
     "children": [
       {
-        "id": "4b7c0cbc5da135ea",
+        "id": "52aa57aea12c826c",
         "type": "tabs",
         "children": [
           {
-            "id": "8d3a786ca12cd8a8",
+            "id": "58abc7a73dbf620e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "a98d7c5c6e83c593",
+            "id": "74b16ac56ce60678",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "40416a20f13c2358",
+            "id": "9c40ec6caa5a17b4",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "fe727b86f505ba70",
+    "id": "da076659796468ad",
     "type": "split",
     "children": [
       {
-        "id": "6c4de338498691fb",
+        "id": "52ee48c357e74feb",
         "type": "tabs",
         "children": [
           {
-            "id": "0becb80d38ee758b",
+            "id": "fafbd91ad7114a0d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web Development/2. CSS/8. CSS Positioning & Layout.md",
+                "file": "Web Development/2. CSS/12. CSS Components.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 8. CSS Positioning & Layout"
+              "title": "Backlinks for 12. CSS Components"
             }
           },
           {
-            "id": "30bdd7b910b820ab",
+            "id": "06652b8e295d49a3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web Development/2. CSS/8. CSS Positioning & Layout.md",
+                "file": "Web Development/2. CSS/12. CSS Components.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 8. CSS Positioning & Layout"
+              "title": "Outgoing links from 12. CSS Components"
             }
           },
           {
-            "id": "672d59b0fa3958c0",
+            "id": "eb089fd067a23901",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,18 +137,18 @@
             }
           },
           {
-            "id": "842564bb0bb84438",
+            "id": "4004d4af8d39f913",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Development/2. CSS/8. CSS Positioning & Layout.md",
+                "file": "Web Development/2. CSS/12. CSS Components.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 8. CSS Positioning & Layout"
+              "title": "Outline of 12. CSS Components"
             }
           }
         ]
@@ -164,43 +168,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8d3a786ca12cd8a8",
+  "active": "900ee6f987ab954a",
   "lastOpenFiles": [
-    "Cyber Security_Notes/21. Wireless Local Area Network.md",
-    "Clippings/Introduction to Hacking Wireless Networks  Ethical Hacking.md",
     "Cyber Security_Notes/17. Network Sniffing.md",
-    "Clippings/PenTest Tools.md",
-    "Clippings/Network Sniffing using Bettercap in Linux.md",
-    "Clippings/How to Set Up Bluetooth in Linux.md",
-    "Clippings/Configuring access ports on Cisco switches.md",
-    "Clippings/Guide to Enumeration Pentest All You Need to Know.md",
+    "Cyber Security_Notes/18. Tcpdump.md",
     "Cyber Security_Notes/16. Man-in-the-Middle (MITM) Attack.md",
-    "Clippings/SYN-FLOOD-DENIAL OF SERVICE(DOS) ATTACK.md",
-    "Cyber Security_Notes/20. Enumeration.md",
-    "Cyber Security_Notes/19. The Metasploit Framework.md",
-    "Clippings/Wireshark Display Filters Cheat Sheet  NetworkProGuide.md",
-    "Web Development/4. Javascript/8. Variables.md",
-    "Web Development/4. Javascript/JS Notes.pdf",
-    "Web Development/4. Javascript/7. Events.md",
-    "Web Development/2. CSS/7. CSS Combinators.md",
+    "CCNA_Class/19. Virtual LANs (VLANs).md",
+    "CCNA_Class/18. Configuring Static Routes on Cisco routers.md",
     "Web Development/2. CSS/12. CSS Components.md",
-    "Web Development/2. CSS/8. CSS Positioning & Layout.md",
-    "Web Development/2. CSS/9. CSS Flexbox & Grid Layout.md",
     "Web Development/2. CSS/10 . Media Queries.md",
-    "Web Development/2. CSS/11. Specificity & !important Rules.md",
-    "Github Syn Assistant.ps1",
-    "CCNA_Class/16. Configuring Switch Interfaces.md",
-    "Trainer_Guide/inceptor_notes - Shortcut.lnk",
-    "CCNA_Class/CCNA 200-301/Day 58 Lab - Wireless LANs.pkt",
-    "CCNA_Class/CCNA 200-301/Day 53 Lab - GRE Tunnels.pkt",
-    "CCNA_Class/CCNA 200-301/Day 52 Lab - STP & HSRP Synchronization.pkt",
-    "CCNA_Class/CCNA 200-301/Day 51 Lab - Dynamic ARP Inspection.pkt",
-    "CCNA_Class/CCNA 200-301/Day 50 Lab - DHCP Snooping.pkt",
-    "CCNA_Class/CCNA 200-301/Day 49 Lab - Port Security.pkt",
-    "CCNA_Class/CCNA 200-301/Day 47 Lab - QoS.pkt",
-    "Web Development/1. HTML/2. HTML Common Elements.md",
-    "Web Development/1. HTML/1. INTRODUCTION.md",
-    "Web Development/Introduction to Web Development.md",
-    "Cyber Security_Notes/15. Hping3.md"
+    "Web Development/2. CSS/11. Specificity & !important Rules.md"
   ]
 }
