@@ -64,7 +64,7 @@ The JavaScript method `toString()` converts an array to a string of (comma sep
 
 ```javascript
 const fruits = ["Banana", "Orange", "Apple", "Mango"];  
-document.getElementById("demo").innerHTML = fruits.toString();
+let text = fruits.toString();
 ```
 
 **Result:**
