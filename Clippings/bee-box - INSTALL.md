@@ -1,5 +1,3 @@
-# bee-box - INSTALL
-
 bee-box is a custom Linux VM pre-installed with bWAPP.
 
 With bee-box, you have the opportunity to explore all bWAPP vulnerabilities!  
@@ -58,20 +56,3 @@ _No! I will not explain how to install VMware or VirtualBox..._
 - _Don't upgrade the Linux operating system—you will lose all the fun!_
 
 ---
-
-## About
-
-This project is part of the ITSEC GAMES project. ITSEC GAMES are a fun approach to IT security education.  
-IT security, ethical hacking, training, and fun... all mixed together.  
-You can find more about the ITSEC GAMES and bWAPP projects on our blog.
-
-We offer a 2-day comprehensive web security course:  
-**'Attacking & Defending Web Apps with bWAPP'**  
-This course can be scheduled on demand, at your location!  
-More info: [http://goo.gl/ASuPa1](http://goo.gl/ASuPa1) (PDF)
-
-Enjoy!  
-
-Cheers,  
-**Malik Mesellem**  
-Twitter: [@MME_IT](https://twitter.com/MME_IT)
