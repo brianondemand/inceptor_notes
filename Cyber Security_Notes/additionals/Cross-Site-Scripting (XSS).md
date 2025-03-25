@@ -1,4 +1,4 @@
-If you're a developer, chances are that you've heard of cross-site scripting. Cross-site scripting, commonly known as **XSS**, is one of the top 10 most common web security vulnerabilities according to **OWASP**. Cross-site scripting to be a major problem in many web application, and it can result in some serious problems. As developer, it's important to know what **XSS** is and to be aware of it, but it's even more important to know how to prevent it. **Cybersecurity** isn't just for security specialists, it's for everyone.
+ v  If you're a developer, chances are that you've heard of cross-site scripting. Cross-site scripting, commonly known as **XSS**, is one of the top 10 most common web security vulnerabilities according to **OWASP**. Cross-site scripting to be a major problem in many web application, and it can result in some serious problems. As developer, it's important to know what **XSS** is and to be aware of it, but it's even more important to know how to prevent it. **Cybersecurity** isn't just for security specialists, it's for everyone.
 
 ## What is Cross-Site Scripting (XSS)?
 
