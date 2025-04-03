@@ -1,4 +1,3 @@
-## Cybersecurity Course Units / Modules:
 
 The course in Cyber Security and Ethical Hacking consists of the following modules:
 
