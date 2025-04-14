@@ -8,6 +8,9 @@
 
 https://cs3.calstatela.edu/~egean/cs4471/lecture-notes-ciscopress2020/CCNAv1/PowerPoint%20slides/
 
+<<<<<<< HEAD
+---
+=======
 
 
 ## 🔢 1. Logical Operators
@@ -127,3 +130,4 @@ if (username === "admin" && password === "1234") {
 
 ---
 
+>>>>>>> 7a95dd5e07c204166bb9359244d51836977bae01
