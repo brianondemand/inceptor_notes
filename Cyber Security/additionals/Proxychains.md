@@ -1,8 +1,15 @@
 ProxyChains and Tor can be used to chain many proxies and provide anonymity, making it more challenging to track down your actual IP address. As a result, ProxyChains hides your genuine IP address by using many proxy servers. Remember that the more proxies you use, the slower your Internet connection will become.
 
+
+![0][https://miro.medium.com/v2/resize:fit:1100/format:webp/0*wm-BBCOoiEO-GPxv]
+
+
+
 ## What is Proxychains?
 
 proxychains is open source software for Linux systems and comes pre-installed with Kali Linux, the tool redirects TCP connections through proxies like TOR, SOCKS4, SOCKS5, and HTTP (S) and it allows us to chain proxy servers. With proxychains, we can hide the IP address of the source traffic and evade IDS and firewalls.
+
+
 
 ## Installing Tor & Proxychains in Linux
 
@@ -72,7 +79,7 @@ You’ll notice “#” in the configuration, which stands for bash language com
 
 ![add-socks5-proxy](https://www.hkrhasan.com/_next/image?url=%2Fstatic%2Fimages%2Fnetworking%2Fproxy%2Fproxychains%2Fproxychains7.png&w=828&q=75)
 
-Here socks4 proxy will be already given. You need to add the socks5 proxy as shown above. And finally, save the config file and exit the terminal.
+Here socks 4 proxy will be already given. You need to add the socks5 proxy as shown above. And finally, save the config file and exit the terminal.
 
 ### Usage of ProxyChains
 
