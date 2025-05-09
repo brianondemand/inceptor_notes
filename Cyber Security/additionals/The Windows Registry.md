@@ -10,7 +10,7 @@ The Windows Registry is organized in a **hierarchical tree structure**, similar 
 - **Keys**: These are like folders in the file system. They organize and group values.
 - **Values**: These are like files and hold the actual data or configuration settings.
 
-The registry is divided into **hives**, which represent the root levels of the registry structure.
+The registry is divided into **5 hives**, which represent the root levels of the registry structure.
 
 ---
 

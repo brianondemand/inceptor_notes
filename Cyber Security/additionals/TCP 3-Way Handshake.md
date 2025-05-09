@@ -62,22 +62,3 @@ HTTP/3 doesn’t use TCP but relies on QUIC (Quick UDP Internet Connections). So
 
 However, the majority of websites are still on HTTP/1.1 and HTTP/2. So nothing is going to happen tomorrow.
 
-**So - what do you think about the TCP 3-way handshake?**
-
-**Is it an overkill? Or a great mechanism for establishing connections?**
-
-## Shoutout
-
-Here are some interesting articles I’ve read recently:
-
-- [Not All Features Are Equal](https://newsletter.systemdesignclassroom.com/p/not-all-features-are-equal?r=1m1f9z&utm_campaign=post&utm_medium=web) by [Raul Junco](https://open.substack.com/users/98661477-raul-junco?utm_source=mentions)
-- [Refactoring](https://newsletter.francofernando.com/p/refactoring?r=1m1f9z&utm_campaign=post&utm_medium=web) by
-- [Rising Above: What My Team Lead Taught Me About Problem-Solving](https://open.substack.com/pub/akoskm/p/rising-above-what-my-team-lead-taught?r=1m1f9z&utm_campaign=post&utm_medium=web) by
-
-**That’s it for today! ☀️**
-
-Enjoyed this issue of the newsletter?
-
-Share with your friends and colleagues.
-
-***See you later with another edition — Saurabh***
