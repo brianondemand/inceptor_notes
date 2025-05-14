@@ -1,8 +1,19 @@
 
+A programming language is a formal language that specifies a set of instructions for a computer to perform specific tasks. 
+
+A code refers to a set of instructions written in a specific programming language that a computer can understand and execute to perform a task.
 
 ## **1. What is a Website?**
 
 A **website** is a collection of web pages that are hosted on the internet and can be accessed using a web browser. It typically has a unique domain name (e.g., `www.example.com`) and is stored on a web server.
+
+**Website**: Primarily informational. It's designed to display content to visitors (e.g., blogs, portfolios, news sites).
+
+**Web Application**: Primarily interactive. It allows users to perform tasks (e.g., logging in, submitting forms, managing data).
+
+- **Website**: Limited interactivity. Users mostly read or view content.
+    
+- **Web Application**: High interactivity. Users can input, process, and retrieve data dynamically.
 
 ### **Key Features of a Website:**
 
@@ -66,7 +77,7 @@ Frontend development is responsible for everything users see and interact with o
 
 #### **Technologies Used in Frontend Development:**
 
-- **HTML (HyperText Markup Language)** – Structures the content of a webpage.
+- **HTML (HyperText Markup Language)** – Defines the structure of web pages.
 - **CSS (Cascading Style Sheets)** – Styles and formats the webpage layout.
 - **JavaScript** – Adds interactivity, animations, and dynamic elements.
 

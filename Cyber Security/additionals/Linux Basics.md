@@ -60,6 +60,11 @@ The alias command lets you give own name to a command or sequence of commands. Y
 
 This sets up and alias called `list` that will execute the `ls -al` command.
 
+---
+
+## Files & Directories
+
+
 ### 5\. `touch` Command
 
 The `touch` command is used to update the timestamps on existing files and directories as well as create new, empty files.
@@ -193,6 +198,10 @@ To remove non-empty directories and all the files and subdirectories inside them
 
 The `-f` option tells `rm` to prompt the user and to ignore nonexistent files and argument.
 
+
+---
+
+
 ### 11\. `sudo` Command
 
 Short for **"SuperUser Do"**. this command enables you to perform task that require administrative or root permission.
@@ -200,6 +209,16 @@ Short for **"SuperUser Do"**. this command enables you to perform task that requ
 Using `sudo` instead of login in as root is more secure because you can grant limited administrative privileges to individual users without them knowing the root password.
 
 To use `sudo`, simply prefix the command with `sudo`:
+
+**Why You’re Asked for a Password When Using `sudo`**
+
+When a user runs a command with `sudo`, the system prompts for their password to ensure that the action is authorized and intentional. 
+
+This is a security feature to prevent unauthorized or accidental execution of administrative commands. 
+
+Once authenticated, the system typically remembers this for a short duration, so you won't be prompted again immediately for subsequent `sudo` commands.
+
+----
 
 ### 12\. `df` Command
 
@@ -235,6 +254,13 @@ sudo apt remove package_name
 
 > \*\*tip2: \*\* if you are using **Red Hat Linux and its derivatives such as CentOs and Fedora**, you can use `yum` or `dnf` command instead of `apt` command.
 
+
+
+----
+
+## Linux Permissions
+
+
 ### 14\. `chmod` Command
 
 `chmod` is another Linux command used to change read, write, and execute permissions on files and directories.
@@ -255,6 +281,14 @@ Three permissions type apply to each class:
 
 This concept allows you to specify which users can read the file, write to the file, or execute the file.
 
+**Order of Permission Triplets:**
+
+- First digit: **Owner (User)**
+
+- Second digit: **Group**
+
+- Third digit: **Others**
+
 To view the file owner and permissions, use the `ls -l` command.
 
 ![ls-command](https://www.hkrhasan.com/_next/image?url=%2Fstatic%2Fimages%2Flinux%2Flinux_basic_commands20.png&w=1920&q=75)
@@ -273,6 +307,18 @@ For example, to give the file's owner read and write permissions and only read p
 
 ![chmod-command](https://www.hkrhasan.com/_next/image?url=%2Fstatic%2Fimages%2Flinux%2Flinux_basic_commands21.png&w=1920&q=75)
 
+**Examples:**
+
+| Command          | Meaning                              |
+| ---------------- | ------------------------------------ |
+| `chmod 777 file` | Read, write, execute for everyone    |
+| `chmod 755 file` | rwx for owner, rx for group & others |
+| `chmod 644 file` | rw for owner, r for group & others   |
+| `chmod 600 file` | rw for owner only                    |
+| `chmod 400 file` | read-only for owner                  |
+| `chmod 000 file` | no permissions at all                |
+
+
 2. Symbolic Mode In the Numeric mode, you change permissions for all 3 owners. In the symbolic mode, you can modify permissions for of specific owner. It makes use of mathematical symbols to modify the Unix file permissions.
 
 | OPERATORS | DESCRIPTION |
@@ -280,6 +326,7 @@ For example, to give the file's owner read and write permissions and only read p
 | **+** | Adds a permission to a file or directory |
 | **\-** | Removes a permission from a file or directory |
 | **\=** | Sets the permission and overrides the permissions set earlier. |
+
 
 The various owners are represented as –
 
@@ -292,6 +339,38 @@ To give write permissions to group members, you would run:
 
 ![chmod-command-symbolic](https://www.hkrhasan.com/_next/image?url=%2Fstatic%2Fimages%2Flinux%2Flinux_basic_commands22.png&w=1920&q=75)
 
+
+When running `ls -la` in a terminal, you receive a detailed list of files and directories in the current directory, including hidden ones. The output includes a field between the permission string and the owner’s name. This number indicates how many hard links exist to the file or directory. For directories, this often includes links to `.` (itself), `..` (parent directory), and any subdirectories.
+
+ Example output of `ls -la`:
+
+
+
+```
+-rw-r--r--  2 user group  4096 May 12 14:00 file.txt
+```
+
+
+- `-rw-r--r--` → File permissions
+
+- `2` → **Link count**
+
+- `user` → Owner
+
+- `group` → Group
+
+- `4096` → File size (in bytes)
+
+- `May 12 14:00` → Last modified date
+
+- `file.txt` → File name
+
+
+---
+
+## Working with Users & Groups
+
+
 ### 15\. `useradd` and `passwd` Command
 
 The `useradd` command is used to add a new user to the system.
@@ -300,9 +379,22 @@ To create a new user account, invoke the `useradd` command followed by the usern
 
 ![useradd-command](https://www.hkrhasan.com/_next/image?url=%2Fstatic%2Fimages%2Flinux%2Flinux_basic_commands23.png&w=3840&q=75)
 
+
+```bash
+sudo adduser username
+```
+
 Once the user is created, set the user password by running the `passwd` command:
 
 ![passwd-command](https://www.hkrhasan.com/_next/image?url=%2Fstatic%2Fimages%2Flinux%2Flinux_basic_commands24.png&w=1920&q=75)
+
+
+```bash
+sudo passwd username
+```
+
+This will prompt you to enter and confirm the new password.
+
 
 ### 16\. `userdel` Command
 
@@ -314,11 +406,68 @@ To delete a user account named pass the user name to the `userdel` command:
 
 Use the `-r` (-remove) option to remove the user's home directory and mail spool:
 
+
+
+
 ### 17\. `groupadd` and `groupdel` Command
 
-To create a new group, invoke the `groupadd` command followed by the group name:
 
-To remove a group, use the `groupdel` command with the group name as argument:
+**Adding a User to a Group**
+
+To give a user access to additional privileges or functionality, you may need to add them to a specific group. This is done using the `usermod` or `gpasswd` command. For example:
+
+```bash
+sudo usermod -aG groupname username
+```
+
+or:
+
+```bash
+sudo gpasswd -a username groupname
+```
+
+To confirm group membership, you can run:
+
+```bash
+groups username
+```
+
+
+**Removing a User from a Group**
+
+If a user should no longer be part of a specific group, you can remove them using:
+
+```bash
+sudo gpasswd -d username groupname
+```
+
+Alternatively, you can use:
+
+```bash
+sudo deluser username groupname
+```
+
+After this, check again with the `groups` command to verify that the user is no longer part of the group.
+
+
+**Removing a User from the System**
+
+To delete a user account without deleting their home directory and files, you can use:
+
+```bash
+sudo deluser username
+```
+
+To delete the user and their home directory (which includes all personal files), use:
+
+```bash
+sudo deluser --remove-home username
+```
+
+Always be cautious when removing users, especially with the `--remove-home` option, as this will permanently delete their data.
+
+---
+
 
 ### 18\. `chown` Command
 
@@ -340,6 +489,12 @@ Use the `-R` (`--recursive`) option, to recursively change the owner of a direct
 chown -R newuser:newgroup dirname
 ```
 
+
+#### UID and GID (User and Group Identification Numbers)
+
+In Linux, users are identified by a User ID (UID), and groups are identified by a Group ID (GID). These numeric values are used internally by the system to manage permissions and ownership. UIDs below 1000 are usually reserved for system users or services, while regular users are assigned higher UIDs (such as 20154 or 20195). You can check a user’s UID and GID using the `id` command followed by the username.
+
+---
 ### 19\. `grep` Command
 
 Another basic Linux command that is undoubtedly useful for everyday tasks is the `grep` command. It lets you search through all the text in a given file.
@@ -347,3 +502,255 @@ Another basic Linux command that is undoubtedly useful for everyday tasks is the
 ![grep-command](https://www.hkrhasan.com/_next/image?url=%2Fstatic%2Fimages%2Flinux%2Flinux_basic_commands27.png&w=1920&q=75)
 
 ---
+## Important Files on Linux
+
+
+#### Understanding the `/etc/passwd` File
+
+The `/etc/passwd` file is a fundamental configuration file in Linux that stores essential information about user accounts. Each line in the file corresponds to a single user on the system. The format of each entry follows a colon-separated structure like so:
+
+```
+username:x:UID:GID:comment:home_directory:shell
+```
+
+The first field is the username. 
+
+The second field, typically shown as an `x`, means that the actual password is stored securely in the `/etc/shadow` file, not here. 
+
+The third and fourth fields are numeric values representing the user ID (UID) and group ID (GID). The UID uniquely identifies each user, while the GID represents their primary group. 
+
+he fifth field is optional and used for user description or full name. 
+
+The sixth field indicates the user's home directory (e.g., `/home/username`), and the last field specifies the default shell (e.g., `/bin/bash`) that the user is assigned upon login.
+
+
+**Types of Users:**
+
+| Type              | UID Range (Typical) | Purpose                                            |
+| ----------------- | ------------------- | -------------------------------------------------- |
+| **System Users**  | 1–999               | Run background services (e.g. `mysql`, `www-data`) |
+| **Regular Users** | 1000+               | Created by you or by apps for login use            |
+| **Root User**     | 0                   | Superuser                                          |
+
+The `x` in the second field of each line **does not represent the actual password**.
+
+Instead, it means: "The **encrypted password** is stored in `/etc/shadow`, not here."
+
+- Originally, `/etc/passwd` used to store hashed passwords in this field.
+    
+- But since `/etc/passwd` is **world-readable** (anyone can view it), storing password hashes there became a security risk.
+    
+- Now, most modern Linux systems store password hashes in `/etc/shadow`, which is **only readable by root**.
+
+**How to See Only View Created Users Only:**
+
+```bash
+awk -F: '$3 >= 1000 && $1 != "nobody" { print $1 }' /etc/passwd
+```
+
+- This lists users with UID ≥ 1000, which are usually **real login users**.
+
+
+Most of Users can’t log in:
+
+They have their shell set to `/usr/sbin/nologin` or `/bin/false`, which prevents login.
+
+---
+#### Understanding the `/etc/shadow` File
+
+The `/etc/shadow` file is used for storing encrypted password information and additional password-related settings for users. Each line represents a user and contains several fields separated by colons. 
+
+The second field contains the encrypted password. If the field starts with `$`, it indicates the hashing algorithm used. 
+
+For example, `$6$` refers to SHA-512 hashing, while `$y$` indicates the use of Yescrypt, which is commonly used in newer Linux distributions like Kali.
+
+The remaining fields specify password aging information such as the number of days since the last password change, the minimum and maximum days between password changes, and warning/inactive/expiration periods. 
+
+|Value|Meaning|
+|---|---|
+|`$6$...`|Encrypted password using SHA-512 (the `$6$` indicates SHA-512)|
+|`!`|Account is **locked** (no login allowed)|
+|`*`|Password **not set** or **account disabled** (often system users)|
+|blank (`""`)|No password required (insecure)|
+
+**Example:**
+
+```
+johndoe:$6$sK3j8...:19407:0:99999:7:::
+```
+
+- **`johndoe`** – username
+    
+- **`$6$...`** – hashed password using SHA-512
+    
+- **`19407`** – password last changed on day 19407 since Jan 1, 1970
+    
+- **`0`** – can change password anytime
+    
+- **`99999`** – password expires after ~273 years (never)
+    
+- **`7`** – start warning 7 days before password expires
+    
+- **`:::`** – inactive/expire/reserved fields are unset
+
+
+**Only the root user can read this file, which enhances security by protecting sensitive password hashes.**
+
+| Prefix | Algorithm                     |
+| ------ | ----------------------------- |
+| `$1$`  | MD5                           |
+| `$2y$` | bcrypt (used in some systems) |
+| `$5$`  | SHA-256                       |
+| `$6$`  | SHA-512                       |
+
+**Converting 20195 to a Human Date**
+
+To convert that to a real-world date, you can use this command:
+
+```bash
+date -d '1970-01-01 +20195 days'
+```
+
+
+
+---
+
+#### The `/etc/sudoers` File and Sudo Access
+
+The `/etc/sudoers` file controls which users or groups can execute commands with superuser privileges using the `sudo` command. 
+
+This file must be edited with caution using the `visudo` command, which checks for syntax errors to prevent system misconfigurations. In the file, you may see sections like `# User privilege specification`, under which you can grant users permission to run `sudo`.
+
+```bash
+sudo visudo
+```
+
+- Edit sudoers file.
+
+**NEVER edit `/etc/sudoers` directly** without using the `visudo` command. This ensures syntax checks are done to prevent configuration errors, which could lock you out of `sudo`.
+
+**Basic Format:**
+
+A typical line in the `sudoers` file looks like this:
+
+```
+username ALL=(ALL:ALL) ALL
+```
+
+**username  hostname=(runas_user) command**
+
+- `username` — the user granted `sudo` privileges.
+    
+- `hostname` — the machine or host where the rule applies (usually set to `ALL`).
+    
+- `runas_user` — the user that the command is run as (often `root`).
+    
+- `command` — the specific command(s) that the user is allowed to run.
+
+This grants the specified user full `sudo` access. It’s also possible to add users to the `sudo` group and manage access through group-based rules.
+
+**`sudoers` includes additional configuration files**, often located in `/etc/sudoers.d/`, which allows for modular management of sudo permissions.
+
+#### Disabling `sudo` Access
+
+If you want to prevent all users from using the `sudo` command, you can remove them from the `sudo` group or delete any individual rules in `/etc/sudoers` that grant them access. 
+
+1. **Removing a user from the `sudo` group can be done using:**
+
+```bash
+sudo deluser username sudo
+```
+
+Once removed, the user will no longer be able to run commands with elevated privileges.
+
+2. **Remove or comment out all existing `sudo` access rules** for other users and groups. This includes lines like:
+
+```bash
+#%sudo   ALL=(ALL:ALL) ALL
+#%admin  ALL=(ALL:ALL) ALL
+#username ALL=(ALL) ALL
+```
+
+- You can comment them out by adding `#` in front of these lines, so they don't have sudo privileges.
+
+3. **Lock Down Sudo Access via sudoers.d** 
+
+You can also manage sudo access in a more modular way by editing the sudoers file inside the /etc/sudoers.d/ directory. 
+
+This keeps the main sudoers file cleaner and makes the management of user permissions easier.
+
+```bash
+sudo visudo -f /etc/sudoers.d/nosudouser
+```
+
+- Remove other users' sudo privileges by adding entries for them in /etc/sudoers.d/:
+- In that file, you can disable them by adding:
+
+```bash
+username ALL=(ALL) NOPASSWD: /bin/false
+```
+
+#### Allowing Only One User to Use `sudo`
+
+To ensure that only one user has `sudo` access, you must remove all others from the `sudo` group and from any relevant entries in the `/etc/sudoers` file. Then, you add the desired user to the `sudo` group using:
+
+```bash
+sudo usermod -aG sudo username
+```
+
+This ensures that only this user has administrative privileges.
+
+**# User Privilege Specification:**
+
+This section is typically where you **explicitly specify which users or groups** are allowed to use `sudo` and which commands they can run. If you want to give a **specific user** (`adminuser`) access to `sudo`, this is where you would add them.
+
+**# Allow Members of Group sudo to Execute Any Command:**
+
+This section controls **group-based access**. If you want to allow all members of a group (e.g., `sudo` group) to have `sudo` access, you would use this section.
+
+
+#### Example of the /etc/sudoers file after modification:
+
+```bash
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+adminuser  ALL=(ALL:ALL) ALL
+
+# Allow members of group sudo to execute any command
+# %sudo   ALL=(ALL:ALL) ALL   # Commented out to disable sudo for group members
+
+# Same for other groups like admin
+# %admin  ALL=(ALL:ALL) ALL   # Commented out
+
+```
+
+
+- **`root ALL=(ALL:ALL) ALL`**: This is typically present and ensures the root user has full sudo access.
+
+- **`adminuser ALL=(ALL:ALL) ALL`**: Explicitly grants `adminuser` full sudo access.
+
+- **Commented-out group entries** (`%sudo ALL=(ALL:ALL) ALL`, `%admin ALL=(ALL:ALL) ALL`): These lines have been disabled to **remove sudo access** from those groups.
+
+
+
+##### Configuring the Password Prompt when using sudo
+
+If you want to **modify or remove** the password prompt (though not recommended for security reasons), you can adjust the `sudoers` file:
+
+1. **To avoid password prompts for specific commands**:  
+    You can configure `sudo` to not ask for a password for specific commands by editing the `/etc/sudoers` file.
+
+```
+username ALL=(ALL) NOPASSWD: /path/to/command
+```
+
+This allows `username` to execute the specified command without being prompted for a password.
+
+2. **To avoid the password prompt for all `sudo` commands**:  
+
+
+```
+username ALL=(ALL) NOPASSWD: ALL
+```
+
+This grants `username` the ability to execute **any** command with `sudo` without being asked for a password, though this is highly discouraged for security reasons.

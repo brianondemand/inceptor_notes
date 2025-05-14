@@ -1464,6 +1464,123 @@ Nmap is a command line tool and Zenmap is a GUI version of it. While Zenmap make
 |`-v`|Increases the verbosity of the output|
 |`--open`|Only reports open (or possibly open) ports|
 
+
+#### Nmap Scripting Engine
+
+Nmap Scripting Engine (NSE) is an incredibly powerful tool that you can use to write scripts and automate numerous networking features.
+
+You can find plenty of scripts distributed across Nmap, or write your own script based on your requirements. You can even modify existing scripts using the **Lua programming language**.
+
+NSE also has attack scripts that are used in attacking the network and various networking protocols.
+
+
+**Detecting Vulnerabilities** (`vuln` category)
+
+```bash
+nmap --script=vuln <target>
+```
+
+- Runs various vulnerability detection scripts against the target.
+
+---
+
+**Finding Open Ports and Services** (`default` category)
+
+```bash
+nmap -sC <target>
+```
+
+- Runs default scripts to detect open ports, services, and additional information.
+
+---
+
+**Checking for SMB Vulnerabilities** (`smb-vuln*`)
+
+```bash
+nmap --script=smb-vuln* <target>
+```
+
+- Checks for vulnerabilities like `EternalBlue (MS17-010)` on SMB services.
+
+---
+
+**Enumerating HTTP Information** (`http-enum`)
+
+```bash
+nmap --script=http-enum <target>
+```
+
+- Enumerates directories, files, and potential vulnerabilities on a web server.
+
+---
+
+**Brute-forcing Login Credentials** (`brute` category)
+
+```bash
+nmap --script=ssh-brute -p 22 <target>
+```
+
+- Attempts to brute-force SSH credentials (replace `ssh-brute` with `ftp-brute`, `http-brute`, etc., for other services).
+
+
+#### Verbosity and Exporting Scan Results
+
+Penetration testing can last days or even weeks. Exporting Nmap results can be useful to avoid redundant work and to help with creating final reports.
+
+##### Verbose Output
+
+```bash
+nmap -v scanme.nmap.org
+```
+
+The verbose output provides additional information about the scan being performed. It is useful to monitor step by step actions Nmap performs on a network, especially if you are an outsider scanning a client’s network.
+
+##### Normal output
+
+Nmap scans can also be exported to a text file. It will be slightly different from the original command line output, but it will capture all the essential scan results.
+
+```bash
+ nmap -oN output.txt scanme.nmap.org
+```
+
+##### XML output
+
+Nmap scans can also be exported to XML. It is also the preferred file format of most pen-testing tools, making it easily organised when importing scan results.
+
+```bash
+ nmap -oX output.xml scanme.nmap.org
+```
+
+##### Multiple Formats
+
+You can also export the scan results in all the available formats at once using the `-oA` command.
+
+```bash
+ nmap -oA output scanme.nmap.org
+```
+
+The above command will export the scan result in three files — output.xml, output. Nmap and `output.gnmap`.
+
+
+---
+
+### `Zenmap`
+
+Zenmap is a graphical user interface for Nmap. It is a free and open-source software that helps you get up and running with Nmap.
+
+![][https://www.freecodecamp.org/news/content/images/2020/09/1-15.png]
+
+---
+
+In addition to providing visual network mappings, Zenmap also allows you to save and search your scans for future use.
+
+Zenmap is great for beginners who want to test the capabilities of Nmap without going through a command-line interface.
+
+
+
+	![TRYHACKME ME ROOM][NMAP]
+
+
 ---
 
 
