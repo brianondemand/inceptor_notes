@@ -1,0 +1,2 @@
+##  What is Steganography
+Steganography is the practice of hiding a secret message within a non-secret message, such as an image, audio file, or video. The goal of steganography is to conceal the existence of the hidden message, so that it cannot be detected by anyone who is not the intended recipient. Steganography is often used in combination with encryption to provide an additional layer of security.
