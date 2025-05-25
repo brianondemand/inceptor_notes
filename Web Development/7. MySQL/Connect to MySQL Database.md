@@ -26,7 +26,7 @@ echo "Connected successfully";
 ```
 
 
-**Example Object-Oriented Style**
+**Example Object-Oriented Style(PDO)**
 
 ```php
 <?php
@@ -43,6 +43,35 @@ echo "Connected successfully!";
 
 ```
 
+
+## 2. **PDO (PHP Data Objects)**
+
+**Supports:** multiple database types (MySQL, PostgreSQL, SQLite, etc.)  
+**Best choice** for flexibility, security (prepared statements), and modern applications.
+
+```php
+<?php
+
+$host = 'localhost';
+$dbname = 'database_name';
+$username = 'username';
+$password = 'password';
+
+try {
+    // Create a new PDO instance
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    
+    // Set error mode to exception for better error handling
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    echo "Connected to the database successfully!";
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+
+?>
+
+```
 
 
 | Code                             | What It Means                             |
@@ -72,3 +101,21 @@ mysqli_close($conn);
 
 **Note:** In the PDO example above we have also **specified a database (myDB)**. PDO require a valid database to connect to. If no database is specified, an exception is thrown.
 
+
+#### Note:
+
+- Exception is an object that describes an error or unexpected behaviour of a PHP script.
+  
+- **PDOException** returns the error code as a string.
+
+- `die() `- Terminate the code if there is an error.
+
+- `getMessage()` - Print out the message
+
+- `include` : add file but brings an error if it does not exist
+
+- `include_once` : add file and check if it has been included in another line then through an error.
+
+- `require` : add file but brings an error if it does not exist and stop entire code from running
+
+- `require_once` : add file and check if it has been included in another line then throw an error and stop entire code from running.

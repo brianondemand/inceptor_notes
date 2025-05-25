@@ -1,13 +1,3 @@
-
-
-## Lab setup:
-
-Kali Linux with host only mode
-
-Bee-box VM with host only mode .
-
-Both running in Virtualbox
-
 ## Host Discovery
 
 Let us begin with a quick netdiscover to get the IP for the Beebox VM

@@ -15,3 +15,9 @@ inurl:"/private" intext:"index of /" "win64" -litespeed
 ```
 Apache port:80 city:"Nairobi"
 ```
+
+
+```bash
+sudo arp-scan -l
+```
+

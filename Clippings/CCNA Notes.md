@@ -1,7 +1,3 @@
----
-title: CCNA Blog | Tips and Tutorials
-source: https://www.ccnablog.com/
----
 # CCNA Modules
 
 1. [The world of networks](https://www.ccnablog.com/the-world-of-networks/)
