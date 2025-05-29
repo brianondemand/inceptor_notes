@@ -10,12 +10,3 @@
 
 ---
 
-![[docker-cheat-sheet.png]]
-
----
-
-![[docker-key-commands.jpg]]
-
-
----
-
