@@ -31,3 +31,18 @@ sudo arp-scan --interface=INTERFACE --localnet
 ```bash
 sudo netdiscover
 ```
+
+
+- Delete Docker images
+
+```
+docker rmi -f <image_id>
+```
+
+- Directory structure
+
+```
+tree -L 2
+```
+
+

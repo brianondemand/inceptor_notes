@@ -12,12 +12,12 @@ Type of SQL injection
 
 
 SQL Injection Vectors
-- Database    ---> [Query used to interact with Database]([[Cisco CEH/Pentest++/RedTeam/3.Web-Hacking/4.Injection/SQL/Commands/SQL-Injection-Vectors/1 - Database]])
-- Login           ---> [Query used with Login]([[Cisco CEH/Pentest++/RedTeam/3.Web-Hacking/4.Injection/SQL/Commands/SQL-Injection-Vectors/2 - Login form]])
+- Database    ---> [Query used to interact with Database]([[Penetration Testing/21. Web Application Enumeration/4.Injection/SQL/Commands/SQL-Injection-Vectors/1 - Database]])
+- Login           ---> [Query used with Login]([[Penetration Testing/21. Web Application Enumeration/4.Injection/SQL/Commands/SQL-Injection-Vectors/2 - Login form]])
 
 - Cookies       ---> [Query used with Cookies]([[SQL Injection]])
-- XML             ---> [Query used with XML (Special Encoding)]([[Cisco CEH/Pentest++/RedTeam/3.Web-Hacking/4.Injection/SQL/Commands/SQL-Injection-Vectors/3 - XML]])
-- AJAX           ---> [Query used with AJAZ Object]([[Cisco CEH/Pentest++/RedTeam/3.Web-Hacking/4.Injection/SQL/Commands/SQL-Injection-Vectors/4 - AJAX]])
+- XML             ---> [Query used with XML (Special Encoding)]([[Penetration Testing/21. Web Application Enumeration/4.Injection/SQL/Commands/SQL-Injection-Vectors/3 - XML]])
+- AJAX           ---> [Query used with AJAZ Object]([[Penetration Testing/21. Web Application Enumeration/4.Injection/SQL/Commands/SQL-Injection-Vectors/4 - AJAX]])
 
 https://portswigger.net/web-security/sql-injection/cheat-sheet
 
