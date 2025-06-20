@@ -1,6 +1,4 @@
-[Sitemap](https://medium.com/sitemap/sitemap.xml)
 
-![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*rp2FZ4EL_E1BIXj_UmFWYw.png)
 
 Passwords can be a real problem. Weak, common, and guessable passwords are in widespread use, mainly because users don’t want to keep track of more complex passwords. Organizations establish policies that specify the length and complexity of acceptable passwords, but this can make users unhappy and can result in more frequent password reset requests. In small or medium-sized organizations, especially ones that employ a lot of creative people, sometimes password policies are loosely enforced or non-existent.
 
@@ -11,7 +9,9 @@ We need to look carefully at authentication-related vulnerabilities especially a
 Here’s a breakdown of the tools we will use and how they help in cracking passwords:
 
 1. **Hashcat**: Hashcat is a versatile and powerful password cracking tool that uses advanced algorithms to perform dictionary attacks, brute-force attacks, and hybrid attacks. Hashcat is known for its ability to harness the power of GPUs (Graphics Processing Units) for faster password cracking. In our lab, we will use Hashcat to perform dictionary-based attacks on password hashes by leveraging large wordlists that contain commonly used passwords, leaked password databases, and other popular guesses.
+   
 2. **John the Ripper**: John the Ripper (often just called “John”) is another well-known tool for cracking password hashes. It supports multiple hashing algorithms and is highly customizable. John can perform both dictionary attacks and brute-force attacks, making it a great tool for testing the strength of password hashes. In our lab, we will use John the Ripper to crack hashes using predefined wordlists, and we will also explore brute force techniques when the dictionary attacks do not yield results.
+   
 3. **RainbowCrack and Rainbow Tables**: RainbowCrack is a tool that uses precomputed tables (rainbow tables) to reverse cryptographic hash functions. Unlike traditional dictionary attacks, which rely on attempting each password one by one, rainbow tables store a large set of precomputed hash values for common passwords. This allows for faster cracking of hashes without needing to generate them on the fly. In our lab, we will explore how rainbow tables can be used to crack hash functions by matching hashes to those stored in a precomputed table.
 
 In this lab, we will complete the following objectives:
@@ -47,6 +47,7 @@ Part 2: Crack Hashes with Hashcat Dictionary Attacks
 First, some MD5 hashes of passwords are needed. In an actual exploit, an attacker will have already compromised a vulnerable system to obtain a password file containing stored password hashes to be cracked offline. In this step you simulate this by creating a password file that contains the hashes you will crack in an upcoming step.
 
 - In a terminal window, create five target hashes by entering the following commands at the prompt: The hashes generated are written to the my\_pw\_hashes.txt file. To view them type cat filename
+  
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*U0nT0sa9XklWZOdmUFRkOQ.png)
 
 ## Step 2: Start Hashcat in Kali.
@@ -57,6 +58,7 @@ This opens the Hashcat manual.
 
 - Review the options available in the first man page.
 - What is specified with the -m and -a options? **The option -m defines the hashtype and -a defines the attack mode.**
+  
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*d6C1x3PRzUjhzXkcfrwxmA.png)
 
 Using the hashcat man pages, which hash type and attack mode would you use to crack the password hashes in the my\_pw\_hashes.txt file? Explain.
@@ -69,7 +71,13 @@ Using the hashcat man pages, which hash type and attack mode would you use to cr
 
 Kali comes with several wordlists built in. Hashcat needs to use a wordlist to crack the hashes.
 
-1. To view the built-in wordlists, enter the command: ls -lh /usr/share/wordlists
+1. To view the built-in wordlists, enter the command: 
+
+```
+ls -lh /usr/share/wordlists
+```
+
+
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*Jt3ZTzgd3Q3WdTsM-LuUvA.png)
 
 This lists the wordlists that are distributed with Kali. We will use the rockyou.txt word list. The rockyou.txt wordlist is a password dictionary that contains more than 14 million passwords.
@@ -80,13 +88,17 @@ What needs to be done to the rockyou.txt.gz file before the wordlist text file c
 
 Change the directory to /usr/share/wordlists by entering the command:
 
-└─$ cd /usr/share/wordlists
+```
+ cd /usr/share/wordlists
+```
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*O_z9jxhmMS72xwvLzYLV7g.png)
 
 Extract the rockyou.txt.gz file using the gzip command:
 
-└─$ sudo gzip -d rockyou.txt.gz
+```
+$ sudo gzip -d rockyou.txt.gz
+```
 
 List the contents of the directory as was done previously using the ls command. Verify that the rockyou.txt file is now unzipped.
 
@@ -94,9 +106,9 @@ List the contents of the directory as was done previously using the ls command. 
 
 Use the more command, followed by the file name, to view the contents of the file to see some of the passwords that hashcat will use to crack your hashes.
 
-┌──(kali㉿Kali)-\[/usr/share/wordlists\]
-
-└─$ more rockyou.txt
+```
+more rockyou.txt
+```
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*6sZ1FZJeZRDUTbj1-U80yg.png)
 
@@ -115,9 +127,9 @@ What seems to be a popular type of password? How could this trend be useful to a
 
 To crack the hashes contained in the my\_pw\_hashes.txt file use the following command:
 
-┌──(kali㉿Kali)-\[~\]
-
-└─$ sudo hashcat -m 0 -a 0 -o cracked.txt my\_pw\_hashes.txt /usr/share/wordlists/rockyou.txt
+```
+sudo hashcat -m 0 -a 0 -o cracked.txt my\_pw\_hashes.txt /usr/share/wordlists/rockyou.txt
+```
 
 - `**sudo**`: Run with superuser privileges.
 - `**hashcat**`: Tool for password cracking.
@@ -155,16 +167,19 @@ How many passwords were cracked? **Hashcat should quickly crack all five.**
 **Hashcat Setup**:
 
 - **Hash Type (**`**-m 0**`**)**: MD5 was used, as the hashes were created using `md5sum`.
+  
 - **Attack Mode (**`**-a 0**`**)**: A dictionary attack was selected to try all possible passwords from a precompiled list.
 
 **Wordlist (**`**rockyou.txt**`**)**:
 
 - The `rockyou.txt` wordlist, containing 14+ million passwords, was used as the dictionary of possible guesses.
+  
 - The file was unzipped and reviewed to verify its content.
 
 **Cracking Process**:
 
 - Hashcat iterated through the `rockyou.txt` wordlist, hashing each password and comparing it with the hashes in `my_pw_hashes.txt`.
+  
 - When a match was found, the plaintext password was “cracked” and saved.
 
 **Output**:
@@ -178,7 +193,10 @@ How many passwords were cracked? **Hashcat should quickly crack all five.**
 - **Weak Hashes**: Many passwords in the wordlist matched the stored hashes.
 - **Popular Wordlist**: The `rockyou.txt` list contains many commonly used passwords, including names, making it highly effective for cracking simple hashes.
 
-**Part 3: Crack Hashes with John the Ripper Using Dictionary and Brute Force Attacks**
+---
+
+
+## Crack Hashes with John the Ripper Using Dictionary and Brute Force Attacks
 
 **Step 1: View the John the Ripper help file.**
 
@@ -192,9 +210,9 @@ In a terminal window, enter the command: john -h to view the John the Ripper hel
 
 Use the following command to crack the hashes in the my\_pw\_hashes file. This may take some time.
 
-┌──(kali㉿Kali)-\[~\]
-
-└─$ john — format=raw-md5 my\_pw\_hashes.txt
+```
+john — format=raw-md5 my\_pw\_hashes.txt
+```
 
 **Breakdown:**
 
@@ -220,9 +238,9 @@ The default wordlist for John the Ripper is fairly small. John can use other wor
 
 Use the following command to instruct John the Ripper to use the rockyou.txt wordlist.
 
-┌──(kali㉿Kali)-\[~\]
-
-└─$ john — wordlist=/usr/share/wordlists/rockyou.txt — format=raw-md5 my\_pw\_hashes.txt
+```
+john — wordlist=/usr/share/wordlists/rockyou.txt — format=raw-md5 my\_pw\_hashes.txt
+```
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*ahE-Jb8ZXDtf2zi59mGrVg.png)
 
@@ -232,9 +250,9 @@ John was able to crack some passwords above shown in orange color.
 
 To instruct John the Ripper to use only brute force cracking use the following command:
 
-┌──(kali㉿Kali)-\[~\]
-
-└─$ john — incremental my\_pw\_hashes.txt
+```
+john — incremental my\_pw\_hashes.txt
+```
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*SeASfWKOvlp8HF_YVKnLIw.png)
 
@@ -266,7 +284,11 @@ MD5 is considered too weak to use. However, notice how long it takes to crack ev
 
 In this example, if you interrupted the password cracking process using john and the raw-md5 format, you can still review the cracked passwords using the — show option.
 
-command: john — show — format=raw-md5 my\_pw\_hashes.txt
+command: 
+
+```
+john — show — format=raw-md5 my\_pw\_hashes.txt
+```
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*GNPsooCUUyXYmaBJfkPcbQ.png)
 
@@ -302,7 +324,10 @@ If you have time, try some complex passwords of varying lengths of 4 to 8 charac
 
 - Try cracking more complex passwords with varying lengths. This allows you to practice using John the Ripper and understand its cracking capabilities.
 
-**Part 4: Crack Hashes using RainbowCrack and Rainbow Tables**
+
+---
+
+## Crack Hashes using RainbowCrack and Rainbow Tables
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*Z8DImUMYDEm9cIn2BWJpZg.png)
 
@@ -314,9 +339,9 @@ The RainbowCrack utility may need to be installed. Rainbow crack differs from ha
 
 To install RainbowCrack enter the following command:
 
-┌──(kali㉿Kali)-\[~\]
-
-└─$ sudo apt install rainbowcrack
+```
+sudo apt install rainbowcrack
+```
 
 **Step 2: Creating rainbow tables with rtgen.**
 
@@ -328,15 +353,19 @@ The rtgen program is used to generate rainbow tables based on user specified par
 
 Enter the rtgen -h command and review the options.
 
+```
+rtgen -h 
+```
+
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*Zc0fTelc7bOW97oRfsGUGA.png)
 
 The example rainbow tables are given at the bottom of the output.
 
 Create a rainbow table by entering:
 
-┌──(kali㉿Kali)-\[~\]
-
-└─$ sudo rtgen md5 loweralpha 1 3 0 1000 1000 0
+```
+sudo rtgen md5 loweralpha 1 3 0 1000 1000 0
+```
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*e7J-9skMXq5CIOWrizr8CA.png)
 
@@ -360,17 +389,17 @@ The file with the.rt extension is our table
 
 Next, the rainbow table must be sorted. Entering the command: sudo rtsort. at the prompt. (Note: be sure to include the space and the period after rtsort as part of the command)
 
-┌──(kali㉿Kali)-\[/usr/share/rainbowcrack\]
-
-└─$ sudo rtsort.
+```
+sudo rtsort .
+```
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*ABA93DNc4A5Re8nziSW5CA.png)
 
 Generate a hash for a simple 3-character password which can then be cracked. Enter the command: echo -n ‘dog’ | md5sum | awk ‘{print $1}’.
 
-┌──(kali㉿Kali)-\[/usr/share/rainbowcrack\]
-
-└─$ echo -n ‘dog’ | md5sum | awk ‘{print $1}’
+```
+echo -n ‘dog’ | md5sum | awk ‘{print $1}’
+```
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*RVg-p807vzDChDI4JOpq0Q.png)
 
@@ -378,9 +407,9 @@ Generate a hash for a simple 3-character password which can then be cracked. Ent
 
 Crack the hash with the rainbow table with RainbowCrack. At the prompt, enter the rcrack. -h 06d80eb0c50b49a509b492424e8c805 command.
 
-┌──(kali㉿Kali)-\[/usr/share/rainbowcrack\]
-
-└─$ rcrack. -h 06d80eb0c50b49a509b49f2424e8c805
+```
+rcrack. -h 06d80eb0c50b49a509b49f2424e8c805
+```
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*kydZSpvkuOdeUjNWPIeqEg.png)
 
@@ -388,19 +417,22 @@ Within milliseconds RainbowCrack should crack the hash and reveal the password d
 
 you can also crack hashes contained in a.txt file as was done in Part 1 of the lab. To create a.txt file with some hashes, enter the following commands at the prompt:
 
+```
 echo -n ‘fox’ | md5sum | awk ‘{print $1}’ > ~/my\_rainbow\_hashes.txt
 
 echo -n ‘boo’ | md5sum | awk ‘{print $1}’ >> ~/my\_rainbow\_hashes.txt
 
 echo -n ‘pop’ | md5sum | awk ‘{print $1}’ >> ~/my\_rainbow\_hashes.txt
+```
+
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*7VPi1w1Hnj4MSXAmEtAuCQ.png)
 
 To crack the hashes in the file, enter the rcrack. -l ~/my\_rainbow\_hashes.txt command at the prompt. The -l option tells rcrack to use a hash list file as input.
 
-┌──(kali㉿Kali)-\[/usr/share/rainbowcrack\]
-
-└─$ rcrack. -l ~/my\_rainbow\_hashes.txt
+```
+rcrack. -l ~/my\_rainbow\_hashes.txt
+```
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*M1E3JiyUZuEPvpyLlAwCDQ.png)
 
@@ -447,16 +479,3 @@ Note: If John the Ripper can’t crack the hash using its default word list, it 
 
 In conclusion, password cracking is a critical component of understanding security vulnerabilities and testing password strength. In this lab, we explored three powerful tools — Hashcat, John the Ripper, and RainbowCrack — each offering unique capabilities to recover plaintext passwords from hashed values. By leveraging dictionary attacks, brute force, and precomputed rainbow tables, these tools allow attackers and security professionals alike to assess the security of hashed password data.
 
-Through Hashcat’s GPU-powered dictionary attacks, John the Ripper’s versatile cracking methods, and RainbowCrack’s speed using rainbow tables, we demonstrated how easily weak and common passwords can be cracked. These tools highlight the importance of using strong, complex passwords and the need for secure password storage techniques, such as hashing with salt and employing multi-factor authentication. As attackers increasingly turn to these techniques to compromise systems, organizations must implement more robust password policies and invest in modern encryption methods to protect their data from unauthorized access. This lab emphasizes the ongoing need for vigilance in password security practices.
-
-Cloud Computing | Cybersecurity | Penetration Testing | Threat Detection | Security Operations
-
-## More from Sumayasomow
-
-## Recommended from Medium
-
-[
-
-See more recommendations
-
-](https://medium.com/?source=post_page---read_next_recirc--315ee9229268---------------------------------------)
