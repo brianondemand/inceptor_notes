@@ -1,4 +1,5 @@
 ## What is DIG?
+
 Dig (Domain Information Groper) is a command-line tool for querying DNS (Domain Name System) servers. It is a powerful tool used for troubleshooting DNS-related problems and obtaining DNS-related information. It is an essential tool for network administrators, web developers, and anyone else who needs to understand how the DNS works.
 
 ## Common Uses and Commands

@@ -1,9 +1,11 @@
 ##  What is FFUF
+
 FFUF is an open-source web fuzzing tool that stands for "Fuzz Faster U Fool". It is designed to help web developers and security professionals discover hidden or undiscovered files, directories, and subdomains by brute-forcing or fuzzing URLs.
 
 FFUF supports various HTTP methods such as GET, POST, PUT, DELETE, HEAD, and many more. It also allows the use of custom headers and cookies. The tool can perform content discovery and web content monitoring.
 
 ##  Common uses and commands
+
 FFUF can be used for various purposes such as directory and file discovery, virtual host discovery, parameter brute-forcing, and many more. Some of the common commands that can be used with FFUF include:
 
 Website Enumeration
