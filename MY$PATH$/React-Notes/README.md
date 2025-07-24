@@ -46,7 +46,7 @@ Happy coding! 🌈✨
   - **[Conditional Rendering: Displaying Based on Conditions](15.%20conditional-rendering.md)** 🚦
   - **[Lists and Keys: Rendering Collections Efficiently](16.%20lists-and-keys.md)** 🔑
 
-- **[Hooks](React-Notes/4.%20Hooks/README.md)**
+- **[Hooks](MY$PATH$/React-Notes/4.%20Hooks/README.md)**
   - **[Introduction to Hooks: Revolutionizing React](17.%20introduction-to-hooks.md)** 🔄
   - **[useState: Managing State in Functional Components](18.%20useState.md)** 📈
   - **[useEffect: Handling Side Effects](19.%20useEffect.md)** 🌊
@@ -57,12 +57,12 @@ Happy coding! 🌈✨
   - **[useMemo: Optimizing Performance with Memoization](24.%20useMemo.md)** ⚡
   - **[useCallback: Preventing Unnecessary Re-renders](25.%20useCallback.md)** 🔁
 
-- **[Context API](React-Notes/5.%20ContextAPI/README.md)**
+- **[Context API](MY$PATH$/React-Notes/5.%20ContextAPI/README.md)**
   - **[Understanding Context: Global State Management](27.%20understanding-context.md)** 🌍
   - **[Creating Context: Building Your Context Provider](28.%20creating-context.md)** 🏗️
   - **[Using Context: Consuming Context in Components](29.%20using-context.md)** 🛠️
 
-- **[Routing](React-Notes/6.%20Routing/README.md)**
+- **[Routing](MY$PATH$/React-Notes/6.%20Routing/README.md)**
   - **[React Router: Navigating Your App](30.%20react-router.md)** 🌐
   - **[Setting Up Routes: Defining Paths](31.%20setting-up-routes.md)** 🛤️
   - **[Link and NavLink](32.%20link-navlink.md)** 🛤️

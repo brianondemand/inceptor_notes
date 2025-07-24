@@ -32,4 +32,4 @@ Don't forget to follow me for more updates and new content, and consider starrin
 
 ### Navigation
 
-[Previous: Routing](React-Notes/6.%20Routing/README.md) | [Next: Further Learning Resources](https://github.com/PugazharasanC)
+[Previous: Routing](MY$PATH$/React-Notes/6.%20Routing/README.md) | [Next: Further Learning Resources](https://github.com/PugazharasanC)
